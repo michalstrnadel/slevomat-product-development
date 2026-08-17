@@ -58,14 +58,6 @@ skills/design/     prototypování a principy (včetně textu sedmi principů)
 skills/evals/      testovací scénáře, jeden na skill
 ```
 
-## Stav
-
-Skilly leží ve Skill Hubu jako drafty a čekají na schválení. Kroky 1–3 vycházejí z Romčiných osobních skillů, které používá, ale tahle verze je přepracovaná a zatím na ní nikdo nepracoval.
-
-Podle čeho poznáme, že to funguje: do týdne po zveřejnění přijdou dvě zrámovaná témata od někoho jiného než od nás dvou. Když nepřijdou, není co rozšiřovat — je potřeba zjistit, proč to nikdo nepoužil.
-
-Zdroj pravdy je Skill Hub, tenhle repozitář je pracovní verze.
-
 ## Interní nástroj
 
 Neobsahuje přihlašovací údaje ani citlivá data a nesmí je obsahovat ani po jakékoli úpravě.

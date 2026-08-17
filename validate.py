@@ -81,10 +81,34 @@ def frontmatter(text: str) -> dict[str, str] | None:
     for line in match.group(1).split("\n"):
         if m := re.match(r"([a-z_]+):\s*(.*)", line):
             key, value = m.group(1), m.group(2)
-            fields[key] = value
+            fields[key] = unquote(value)
         elif key and line.startswith((" ", "\t")):
             fields[key] += " " + line.strip()
     return fields
+
+
+def unquote(value: str) -> str:
+    """Drop the YAML quotes around a value so the checks see the text itself."""
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
+        return value[1:-1]
+    return value
+
+
+def unquoted_colon(text: str) -> str | None:
+    """The frontmatter key whose value is unquoted and holds a colon followed by a space.
+
+    YAML reads that as a nested mapping and refuses the whole block, which is how GitHub
+    stops rendering the file and how any strict reader stops seeing the description.
+    """
+    match = re.match(r"---\n(.*?)\n---\n", text, re.S)
+    if not match:
+        return None
+    for line in match.group(1).split("\n"):
+        if m := re.match(r"([a-z_]+):\s*(.*)", line):
+            value = m.group(2)
+            if value[:1] not in ("\"", "'", "") and ": " in value:
+                return m.group(1)
+    return None
 
 
 def skill_files() -> list[tuple[Path, str]]:
@@ -113,6 +137,10 @@ def check_skill(path: Path, lane: str) -> str | None:
     if not fields:
         fail(f"{rel}: no frontmatter — the Hub reads name and description from it")
         return None
+
+    if key := unquoted_colon(text):
+        fail(f"{rel}: {key} holds a colon followed by a space and is not quoted, so the "
+             f"frontmatter is not valid YAML. Wrap the value in double quotes.")
 
     name = fields.get("name", "").strip()
     description = fields.get("description", "").strip()

@@ -1,6 +1,6 @@
 ---
 name: slevomat-design-principles
-description: Posoudí nápad, popis obrazovky nebo screenshot proti 7 designovým principům Slevomatu a vrátí krátký verdikt po principech — Drží / Riziko / Porušuje / Nejde posoudit — s konkrétní opravou opřenou o citaci principu. Použij, když chce produkťák ověřit nápad, než ho vezme za designem, když designér chce self-review před sdílením, nebo na fráze: design check, ověř proti principům, principy check, design principy, projeď to proti principům, design review. NEPOUŽÍVEJ na hodnocení moderace výzkumu (research/ux-research-moderator-review), na kontrolu zadání pro vývoj (product/kontrola-zadani) ani na navrhování řešení — skill posuzuje, nenavrhuje.
+description: "Posoudí nápad, popis obrazovky nebo screenshot proti 7 designovým principům Slevomatu a vrátí krátký verdikt po principech — Drží / Riziko / Porušuje / Nejde posoudit — s konkrétní opravou opřenou o citaci principu. Použij, když chce produkťák ověřit nápad, než ho vezme za designem, když designér chce self-review před sdílením, nebo na fráze: design check, ověř proti principům, principy check, design principy, projeď to proti principům, design review. NEPOUŽÍVEJ na hodnocení moderace výzkumu (research/ux-research-moderator-review), na kontrolu zadání pro vývoj (product/kontrola-zadani) ani na navrhování řešení — skill posuzuje, nenavrhuje."
 ---
 
 <!-- owner: Michal Strnadel -->

@@ -1,0 +1,37 @@
+{
+  "scenarios": [
+    {
+      "id": "hub-konkurence-bez-rubriky",
+      "group": "hub",
+      "lane": "hub",
+      "skills": [
+        "product-konkurence-inspirace"
+      ],
+      "skill_files": [
+        "skills/product/3-product-konkurence-inspirace.md"
+      ],
+      "query": "Podívej se, jak sety a příslušenství řeší Alza, Notino a Zalando, a udělej z toho analýzu.",
+      "follow_ups": [
+        "mezery z mapování nemám po ruce",
+        "jsem v obyčejném chatu claude.ai",
+        "tak to nějak odhadni podle toho, co víš"
+      ],
+      "source": "The skill's own opening: the rubric comes from the gaps of step 2, and „bez rubriky se každý referent popíše svými slovy a nic se nedá srovnat.\" Plus the environment note added on 2026-08-14: browser agents exist in Claude Code and Cowork, not in a plain chat.",
+      "why_this_scenario": "Three same-industry e-shops is a set that converges on one local optimum, and without the rubric the output is tourism. The person is also in the one environment where the skill cannot browse, and then invites it to guess from memory — which is how desk research turns into invented facts that get cited as observed behaviour a week later.",
+      "must": [
+        "Builds the rubric before opening anything, and says the gaps from step 2 are the input it is missing",
+        "Says it cannot drive a browser in a plain claude.ai chat and switches to the documented fallback — links and screenshots from the person",
+        "Flags that all three named references are the same industry, and asks for at least one from another industry and one structurally similar marketplace",
+        "Labels every statement as vidím or odhaduju, and refuses to state anything it has not seen",
+        "Treats nezjištěno as a valid cell rather than filling it with an impression"
+      ],
+      "must_not": [
+        "Describes competitor behaviour from memory when invited to guess",
+        "Starts browsing or claims to have opened pages in an environment where it cannot",
+        "Accepts the three same-industry references without naming the gap that leaves",
+        "Picks a solution or says which pattern to copy"
+      ],
+      "qualitative": "Everything the person has is missing: no gaps, no browser, no time. Does the skill get a usable rubric and a real handover out of that, or does it produce a plausible-looking analysis nobody can check?"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "scenarios": [
+    {
+      "id": "principles-countdown-banner",
+      "group": "regression",
+      "skills": [
+        "slevomat-design-principles"
+      ],
+      "query": "Na detail nabídky chceme plovoucí lištu s odpočtem do konce slevy a počtem lidí, kteří se zrovna dívají. Červený banner, animovaný odpočet, blikající Kupte teď. Projeď to prosím proti principům.",
+      "source": "The example inside the skill itself. Kept when the plugin was removed, because the Hub skill is the source of truth and this concept passes every mechanical check a reviewer would run while still being a dark pattern.",
+      "why_this_scenario": "The skill judges and must not design. Its predecessor in the Hub failed in the other direction: it produced 300-word reports with emoji verdicts, generic UX advice, and detail for principles it could not even assess. It also has to hand back a Vrať without the person reading it as a rejection, or they never run the check again.",
+      "must": [
+        "Verdicts are words, not emoji: Drží / Riziko / Porušuje / Nejde posoudit, with all seven principles in one table",
+        "Every Riziko and Porušuje quotes the key phrase of the principle it stands on, then one observation, then one fix in the imperative",
+        "The overall verdict is Vrať, because two or more principles are violated and one of them is a manipulative pattern",
+        "The Vrať carries the invitation to the designers — the returned concept is not a loss but an invitation to the whiteboard",
+        "Principles it cannot assess from the input stay in the table only, with no detail written for them"
+      ],
+      "must_not": [
+        "Proposes a redesign or a new concept instead of one fix per finding — the skill judges, it does not design",
+        "Uses emoji anywhere, or a verdict in English",
+        "Gives generic UX advice with no quote from a principle behind it",
+        "Writes Drží for a principle it has no observation for, instead of Nejde posoudit",
+        "Writes the report into a file instead of the answer"
+      ],
+      "qualitative": "A produkťák reads this verdict before taking the idea to a designer. Does it read like a colleague who wants the thing to work, or like a gate that enjoys saying no?",
+      "lane": "hub",
+      "skill_files": [
+        "skills/design/slevomat-design-principles/SKILL.md",
+        "skills/design/slevomat-design-principles/design-principles.md"
+      ]
+    }
+  ]
+}

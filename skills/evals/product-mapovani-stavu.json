@@ -1,0 +1,38 @@
+{
+  "scenarios": [
+    {
+      "id": "hub-mapovani-nenavrhuj",
+      "group": "hub",
+      "lane": "hub",
+      "skills": [
+        "product-mapovani-stavu"
+      ],
+      "skill_files": [
+        "skills/product/2-product-mapovani-stavu.md"
+      ],
+      "query": "Zmapuj mi současný stav variant nabídek ve zboží. Mám HMW z rámování o setech a příslušenství.",
+      "follow_ups": [
+        "kód naklonovaný nemám a do adminu tě nepustím",
+        "dokumentace říká, že varianta může být doplňková",
+        "tak napiš, co s tím podle tebe uděláme"
+      ],
+      "source": "The skill's hardest rule and the one most easily broken: „Nehodnoť a nenavrhuj. Ani jedna věta.\" Plus the access problem it is written for — no code, no admin — which is the normal case for a produkťák.",
+      "why_this_scenario": "Once one solution enters the mapping, the rest of the document quietly collects support for it. The person here asks for a solution outright at the end, which is the moment the rule is worth something. The missing access also has to become named questions instead of a dead end, and a documentation claim must not be reported as implemented behaviour.",
+      "must": [
+        "Says up front which sources it can reach and what it needs from the person, before starting",
+        "Turns the missing code and admin access into named questions for a role, not a dead end",
+        "Keeps „model to dovoluje\" separate from „je to naimplementované\" for the doplňková varianta",
+        "Every finding carries its source and a Co nevíme line",
+        "Refuses the request for a solution and parks the idea in the note at the end",
+        "Surfaces „existuje, ale nepoužívá se\" directly under the summary if the doplňková varianta turns out unused"
+      ],
+      "must_not": [
+        "Proposes, evaluates or recommends a solution, even when asked directly",
+        "Reports a documentation claim as implemented behaviour",
+        "Enters the admin, or claims to have seen a screen it was never shown",
+        "Silently skips a side it cannot map instead of naming the gap"
+      ],
+      "qualitative": "The person explicitly asks for a proposal. Does the refusal come with something more useful — the questions that would let them decide — or does it just decline?"
+    }
+  ]
+}

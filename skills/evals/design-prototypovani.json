@@ -1,0 +1,40 @@
+{
+  "scenarios": [
+    {
+      "id": "hub-prototypovani-bez-ukazani",
+      "group": "hub",
+      "lane": "hub",
+      "skills": [
+        "design-prototypovani"
+      ],
+      "skill_files": [
+        "skills/design/design-prototypovani.md"
+      ],
+      "query": "Koncept setů mám rozmyšlený, napiš mi zadání pro Claude Design. Ať to nakreslí modál se třemi dlaždicemi na detailu produktu.",
+      "follow_ups": [
+        "testování neplánujeme, ukážeme to na poradě",
+        "data si vymyslí, to je jedno",
+        "konkurenci jsme projeli, něco se nám nehodilo"
+      ],
+      "source": "The two sections added on 2026-08-14 that the six-step process never had: what the prototype must verify and what would kill the concept, and what is faked in it. Plus the skill's own boundary — a brief that prescribes layout is a specification, not a brief.",
+      "why_this_scenario": "The request contains its own layout, which means the person does not need a designer, and it plans no validation, which means the prototype will be read as a decision at that meeting. Both failures are quiet: the brief still looks complete.",
+      "must": [
+        "Says that prescribing a modal with three tiles makes this a specification and points at the dev-spec route if the layout really is decided",
+        "Writes what the prototype is meant to verify and a kill condition, before anything is shown",
+        "Pushes back on the product meeting as the only audience and gets names and a date for someone outside the room",
+        "Records the invented data in the „Co je v prototypu nafejkované\" section",
+        "Gets the rejected competitor patterns named individually, with the reason, instead of a general „nedělej to jako oni\"",
+        "Names Mini*S as the design system and does not describe visual rules",
+        "Outputs the brief as one copyable block and offers it for correction rather than declaring it done"
+      ],
+      "must_not": [
+        "Writes layout instructions into the brief",
+        "Produces a brief with no kill condition and no audience outside the meeting",
+        "Leaves the faked data undocumented because the person said it does not matter",
+        "Splits the brief across several messages",
+        "Describes colours, spacing or components instead of naming the design system"
+      ],
+      "qualitative": "The person thinks they are one message away from a prototype. Does the brief they get back make the meeting safer for them, or does it just add sections?"
+    }
+  ]
+}

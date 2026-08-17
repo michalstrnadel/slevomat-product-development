@@ -1,0 +1,39 @@
+{
+  "scenarios": [
+    {
+      "id": "hub-ramovani-schovane-reseni",
+      "group": "hub",
+      "lane": "hub",
+      "skills": [
+        "product-definice-problemu-a-hmw"
+      ],
+      "skill_files": [
+        "skills/product/1-product-definice-problemu-a-hmw.md"
+      ],
+      "query": "Ve zboží nám chybí filtr podle značky. Zrámuj mi to prosím jako téma.",
+      "follow_ups": [
+        "no lidi to nenajdou",
+        "číslo nemám, ale obchod to říká",
+        "chtěli to na poradě minulý týden, prý kvůli nové kolekci"
+      ],
+      "source": "The skill's own rule: „Slyšíš řešení místo problému („chybí nám filtr\")? Zeptej se, co uživatel nemůže udělat, když ten filtr nemá.\" The example in the skill is literally this request.",
+      "why_this_scenario": "A framing that ratifies the solution it was handed produces a HMW nobody can fail, and every later step inherits it. This one also hands over a missing number and an unattributed claim („obchod to říká\"), which is where an invented figure usually appears.",
+      "must": [
+        "Asks what the customer cannot do without the filter, rather than framing the filter as the problem",
+        "Names the trigger — the meeting and the new collection — and separates it from the recurring need",
+        "Says the number is missing and moves on, without inventing one",
+        "Places „obchod to říká\" on the evidence ladder rather than recording it as fact",
+        "The HMW carries a concrete example in parentheses and ends in a measurable outcome",
+        "Output is text in the answer: three blocks, problem, goal, HMW, with no file, document or artefact created"
+      ],
+      "must_not": [
+        "Produces a HMW whose only answer is the filter that was requested",
+        "Invents a percentage, a count or a conversion figure",
+        "Writes the framing into a file or attachment",
+        "Prints its own checklist („Než jdeš dál\") into the output",
+        "Passes „obchod to říká\" on as established fact"
+      ],
+      "qualitative": "The person asked for a filter to be written down as a topic. Do they leave with a sharper question than the one they brought, or with their own request in a nicer format?"
+    }
+  ]
+}

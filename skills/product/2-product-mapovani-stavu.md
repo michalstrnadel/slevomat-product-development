@@ -38,17 +38,17 @@ Když téma zasahuje ještě někoho dalšího — zákaznickou péči, účetni
 
 ## Odkud brát podklady
 
-Hned na začátku si ověř, na které zdroje vůbec dosáhneš, a řekni pisateli, co od něj budeš potřebovat. Zkus si zavolat skilly pro dokumentaci, kód a data ještě předtím, než začneš pracovat. Některé smí spustit jen člověk, jiné nemají napojení na databázi. Když to zjistíš až v půlce, pisatel neví, proč to stojí — a junior si bude myslet, že něco pokazil. Rovnou mu napiš seznam: „tohle si spusť ty, tohle mi pošli, tohle přeskočíme".
+Hned na začátku si ověř, na které zdroje vůbec dosáhneš, a řekni produkťákovi, co od něj budeš potřebovat. Zkus si zavolat skilly pro dokumentaci, kód a data ještě předtím, než začneš pracovat. Některé smí spustit jen člověk, jiné nemají napojení na databázi. Když to zjistíš až v půlce, produkťák neví, proč to stojí — a junior si bude myslet, že něco pokazil. Rovnou mu napiš seznam: „tohle si spusť ty, tohle mi pošli, tohle přeskočíme".
 
-Nejdřív si zkus zavolat skill sám. Když ti to systém odmítne, předej práci pisateli a napiš mu přesně, co má spustit a jaké otázky tam vložit. Nikdy neobcházej odmítnutí tím, že si totéž zjistíš jinudy. Která nastavení jsou zapnutá se v čase mění, proto se to nehádá dopředu — vždycky se to zkusí.
+Nejdřív si zkus zavolat skill sám. Když ti to systém odmítne, předej práci produkťákovi a napiš mu přesně, co má spustit a jaké otázky tam vložit. Nikdy neobcházej odmítnutí tím, že si totéž zjistíš jinudy. Která nastavení jsou zapnutá se v čase mění, proto se to nehádá dopředu — vždycky se to zkusí.
 
 **Dokumentace** — skill slevomat-documentation:slevomat-docs. Čte interní netechnickou dokumentaci nasynchronizovanou v pluginu, nic se neklonuje. Tímhle vždycky začni, protože z dokumentace vzniknou konkrétní otázky do kódu.
 
-**Kód** — skill slevomat-code. Spouštěj ho až po dokumentaci a s konkrétními otázkami, ne naslepo. Když ho nesmíš zavolat, připrav pisateli seznam otázek a řekni mu, ať spustí /slevomat-code a odpověď vloží zpátky.
+**Kód** — skill slevomat-code. Spouštěj ho až po dokumentaci a s konkrétními otázkami, ne naslepo. Když ho nesmíš zavolat, připrav produkťákovi seznam otázek a řekni mu, ať spustí /slevomat-code a odpověď vloží zpátky.
 
 **Data** — skill data-chat. Stejný postup, stejná záložní cesta.
 
-**Zákazník na webu** — potřebuješ od pisatele odkazy i screenshoty. Vyžádej si seznam ploch, ne jednu obrazovku, jinak zmapuješ jeden detail a mineš celou cestu. Screenshot řekne, co přesně má pisatel na mysli; odkaz ukáže to, co na screenshotu není — co je pod okrajem, co se stane po přepnutí, jak to vypadá na mobilu.
+**Zákazník na webu** — potřebuješ od produkťáka odkazy i screenshoty. Vyžádej si seznam ploch, ne jednu obrazovku, jinak zmapuješ jeden detail a mineš celou cestu. Screenshot řekne, co přesně má produkťák na mysli; odkaz ukáže to, co na screenshotu není — co je pod okrajem, co se stane po přepnutí, jak to vypadá na mobilu.
 
 **Zakládání nabídky a partnerská administrace** — do adminu nikdy nechoď sám. Jsou tam živá data a živí partneři. Vyžádej si screenshoty relevantních kroků za sebou a k každému jednu větu, co tam ten člověk dělá. Screenshot ukáže, jak to vypadá, ale ne pravidla — co je povinné, co se validuje, kdo to smí. Na to se musíš zeptat.
 
@@ -82,7 +82,7 @@ Dvě pravidla, na kterých hodně záleží:
 > **Proč to potřebujeme:** Pokud se to nepoužívá kvůli nějakému známému problému, nemá smysl na tom stavět.
 > **Brzdí další krok:** ano
 
-Piš role, ne jména — jména se mění. Když pisatel jméno zná, doplní si ho sám.
+Piš role, ne jména — jména se mění. Když produkťák jméno zná, doplní si ho sám.
 
 ## Struktura výstupu
 

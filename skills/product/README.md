@@ -25,26 +25,17 @@ V claude.ai i v Coworku je seznam skillů plochý — nevidíš, ke kterému plu
 
 **Kroky 2 a 3 — kdy skill nepoužívat.** Mapování není na hledání řešení, konkurence není na výběr řešení. V plochém seznamu je záměna skillů druhá nejčastější příčina selhání.
 
-**Role.** Místo „produkťák" je všude tvoje slovo **„pisatel"**. Mapování i konkurenční rešerši dělají stejně tak designéři a výzkumníci a podle názvu role si skill člověk přiřadí k sobě.
-
 **Opravené odkazy.** Mapování odkazovalo na skill, který se mezitím přejmenoval. A krok 1 tvrdil, že řešení navrhuje `slevomat-design-principles` — ten ale posuzuje, nenavrhuje.
 
 ## Krok 4 — tam je změn nejvíc
 
-Dva bloky, které jsi nepsala. Ty si projdi hlavně:
+Přidali jsme dva bloky, které jsi nepsala:
 
-**„Co má prototyp ověřit a co by koncept zabilo."** Prototyp je experiment. Když se předem nenapíše, co by ho vyvrátilo, nemůže selhat — a místo odpovědi z něj vyleze mandát. Proto se to píše hned, ne až po ukázání, kdy by to byla výmluva. Součástí je i to, komu se prototyp ukáže: jména a termín, ne „plánujeme testování".
+**„Co má prototyp ověřit a co by koncept zabilo."** Dopředu se napíše, co by muselo vyjít najevo, aby se koncept zahodil. Bez toho prototyp nemůže dopadnout špatně — vždycky se najde důvod pokračovat. Píše se to hned, ne až po ukázání, kdy si to člověk přizpůsobí výsledku. Patří sem i to, komu se prototyp ukáže: konkrétní jména a termín.
 
-**„Co je v prototypu nafejkované."** Prototyp z Claude Design vypadá hotově a na poradě se z něj snadno stane rozhodnutí. Seznam vymyšlených dat a nefunkčních tlačítek je proti tomu nejlevnější ochrana.
+**„Co je v prototypu nafejkované."** Prototyp z Claude Design vypadá hotově a lidi na poradě ho tak i čtou. Proto se k němu píše seznam vymyšlených dat a tlačítek, která nikam nevedou.
 
-Kromě toho: zavržené vzory z kroku 3 se do „Co nedělat" píšou jmenovitě a s důvodem, jinak je designér za tři týdny navrhne znovu. A brief je jeden blok ke zkopírování, který se nabídne k projití, ne k odeslání.
-
-## Jak to dostat ven
-
-1. **Projdi to** — hlavně krok 4, ty dva bloky výš.
-2. Dej **„Sdílet ke schválení"** v claude.ai. Schvaluje Andre, do té doby drafty vidí jen Michal.
-3. **Než to schválí:** jestli si chceš mezitím aktualizovat svoje osobní skilly, vlož tenhle text a nahraď prefix `product-` za `slevomat-` u těch čtyř jmen. Osobní kopie jsou jediné místo, kde smí staré názvy zůstat.
-4. **Po schválení** osobní kopie smaž.
+Kromě toho: co se v kroku 3 zavrhlo, se do „Co nedělat" píše jmenovitě a s důvodem — jinak to designér za tři týdny navrhne znovu. A brief je jeden blok ke zkopírování; skill ho nabídne k projití, neodesílá ho.
 
 ## Co víme a neopravili jsme
 

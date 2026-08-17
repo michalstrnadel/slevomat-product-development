@@ -8,17 +8,17 @@ description: Předávací bod mezi produktem a designem (krok 4 produktové prá
 
 # Zadání pro design
 
-Krok 4 produktového procesu. Cílem je samonosný brief, se kterým pisatel odstartuje konverzaci s Claude Design a dostane prototyp.
+Krok 4 produktového procesu. Cílem je samonosný brief, se kterým produkťák odstartuje konverzaci s Claude Design a dostane prototyp.
 
 ## Kdy to použít a kdy ne
 
 Použij, když je koncept už rozmyšlený — je jasné, jaké plochy nebo obrazovky mají vzniknout a co na nich má být. Tenhle skill zadání sepisuje, nevymýšlí ho.
 
-Nepoužívej, když koncept ještě není. Když pisatel neví, co má vzniknout, vrať ho na krok 1 až 3 — bez zrámovaného problému a bez znalosti současného stavu vznikne brief, který designéra pošle hádat.
+Nepoužívej, když koncept ještě není. Když produkťák neví, co má vzniknout, vrať ho na krok 1 až 3 — bez zrámovaného problému a bez znalosti současného stavu vznikne brief, který designéra pošle hádat.
 
 Nepoužívej ani na interní nástroje a jednorázovky stavěné od nuly, bez procesu za sebou — tam je slevomat-product-development, který si rozhovor o problému teprve vede. Tenhle skill předpokládá, že rozhovor už proběhl v krocích 1 až 3.
 
-A jedna hranice, na kterou pozor: když v zadání píšeš rozvržení, píšeš už specifikaci, ne brief pro design. Brief říká jaký problém, jaká omezení a jak pozná dobrý výsledek. Neříká „udělej modál se třemi dlaždicemi". Když pisatel přesně ví, jak to má vypadat, nepotřebuje designéra a má jít na skill psani-zadani.
+A jedna hranice, na kterou pozor: když v zadání píšeš rozvržení, píšeš už specifikaci, ne brief pro design. Brief říká jaký problém, jaká omezení a jak pozná dobrý výsledek. Neříká „udělej modál se třemi dlaždicemi". Když produkťák přesně ví, jak to má vypadat, nepotřebuje designéra a má jít na skill psani-zadani.
 
 ## Pravidlo, na kterém všechno stojí
 
@@ -86,7 +86,7 @@ To „proč" je klíčové. Bez něj designér plochu vyzdobí, místo aby ji na
 
 ### 9. Začni od screenshotů současného stavu
 
-Když plochy přidáváš do něčeho, co už existuje, nenech designéra kreslit od nuly a nevypisuj mu, co na stránce je. Řekni mu, ať si načte screenshoty dnešního stavu a upravuje je. Screenshoty dodá pisatel.
+Když plochy přidáváš do něčeho, co už existuje, nenech designéra kreslit od nuly a nevypisuj mu, co na stránce je. Řekni mu, ať si načte screenshoty dnešního stavu a upravuje je. Screenshoty dodá produkťák.
 
 A připoj instrukci, ať se ptá, když mu na screenshotu není jasné, proč tam prvek je, čím se plní nebo co se stane po kliknutí. Ze screenshotu se nepozná logika a právě v ní bývají chyby, které nemá zopakovat.
 
@@ -133,7 +133,7 @@ Věci, které nejsou designové, ale produktové nebo obchodní. Bez tohohle sez
 
 ## Nabídni a počkej
 
-Hotový brief se neodešle, nabídne se: *„Napsal jsem zadání — projdi ho a řekni, co doplnit nebo změnit."* A když pisatel řekne „tohle jsem neřekl", přepiš pole jeho opravou — bez hádání o tom, co bylo řečeno. Je to rozdíl mezi zadáním, za kterým člověk stojí, a zadáním, které mu někdo vnutil.
+Hotový brief se neodešle, nabídne se: *„Napsal jsem zadání — projdi ho a řekni, co doplnit nebo změnit."* A když produkťák řekne „tohle jsem neřekl", přepiš pole jeho opravou — bez hádání o tom, co bylo řečeno. Je to rozdíl mezi zadáním, za kterým člověk stojí, a zadáním, které mu někdo vnutil.
 
 ## Než to pošleš
 

@@ -1,6 +1,6 @@
 ---
 name: product-konkurence-inspirace
-description: Třetí krok produktové práce ve Slevomat Group — zjistit, jak stejné HMW otázky řeší jinde. Prochází reálné cizí weby, popisuje co na nich uživatel dnes vidí, odhaduje jak to nejspíš funguje, a odpovídá otázku po otázce. Výstupem je HTML stránka s obrázky z těch webů a s popisem, jak to kdo řeší. Použij vždy, když je zmapovaný současný stav a je potřeba inspirace nebo srovnání s trhem. Triggeruj na fráze jako: konkurenční analýza, jak to řeší konkurence, jak to dělají jinde, inspirace z trhu, benchmark, podívej se na konkurenci, projdi cizí weby, co dělá Alza a Notino, best practice, jak to řeší ostatní. Navazuje na skill product-mapovani-stavu. NEPOUŽÍVEJ na výběr řešení — krok sbírá, co existuje, a nerozhoduje, co uděláme; a NEPOUŽÍVEJ ho bez mezer z mapování, jinak z toho vyjde prohlídka cizích webů. Naplno běží v Claude Code nebo v Coworku (řídí agenty v prohlížeči) — v chatu claude.ai jede jen ze screenshotů a odkazů od pisatele.
+description: Třetí krok produktové práce ve Slevomat Group — zjistit, jak stejné HMW otázky řeší jinde. Prochází reálné cizí weby, popisuje co na nich uživatel dnes vidí, odhaduje jak to nejspíš funguje, a odpovídá otázku po otázce. Výstupem je HTML stránka s obrázky z těch webů a s popisem, jak to kdo řeší. Použij vždy, když je zmapovaný současný stav a je potřeba inspirace nebo srovnání s trhem. Triggeruj na fráze jako: konkurenční analýza, jak to řeší konkurence, jak to dělají jinde, inspirace z trhu, benchmark, podívej se na konkurenci, projdi cizí weby, co dělá Alza a Notino, best practice, jak to řeší ostatní. Navazuje na skill product-mapovani-stavu. NEPOUŽÍVEJ na výběr řešení — krok sbírá, co existuje, a nerozhoduje, co uděláme; a NEPOUŽÍVEJ ho bez mezer z mapování, jinak z toho vyjde prohlídka cizích webů. Naplno běží v Claude Code nebo v Coworku (řídí agenty v prohlížeči) — v chatu claude.ai jede jen ze screenshotů a odkazů od produkťáka.
 ---
 <!-- owner: Romana Trušinová -->
 <!-- version: 0.1.0 -->
@@ -39,22 +39,22 @@ Z každé mezery z kroku 2 udělej jednu otázku, kterou se pak ptáš u všech 
 
 Bez rubriky se každý referent popíše svými slovy a nic se nedá srovnat.
 
-## 2 · Domluv s pisatelem referenty i konkrétní stránky
+## 2 · Domluv s produkťákem referenty i konkrétní stránky
 
 Neptej se jen „na koho se podívat". Vyžádej si přímé odkazy na konkrétní stránky, ideálně takové, kde je to chování vidět. Hledání té správné stránky na cizím webu spolyká víc času než všechno ostatní dohromady.
 
-Navrhni sadu sám, u každého referenta napiš, kterou otázku z rubriky má zodpovědět, a nech pisatele upravit. Dvě pravidla k výběru:
+Navrhni sadu sám, u každého referenta napiš, kterou otázku z rubriky má zodpovědět, a nech produkťáka upravit. Dvě pravidla k výběru:
 
 - Aspoň jeden referent z jiného oboru. Stejný obor konverguje ke stejnému lokálnímu optimu.
 - Aspoň jeden strukturně podobný nám — marketplace s mnoha malými prodejci, ne katalogový e-shop.
 
-Když pisatel sadu změní, řekni nahlas, jakou mezeru ta nová sada nechává. Nespolkni to.
+Když produkťák sadu změní, řekni nahlas, jakou mezeru ta nová sada nechává. Nespolkni to.
 
 Než začneš procházet, napiš seznam záběrů: co přesně chceš z každé stránky vyfotit. Rozsah, který se dá udělat v jednom sezení: 4–6 referentů, 2–3 stránky na každého, 10–15 obrázků celkem.
 
 ## 3 · Procházej weby úsporně
 
-Nejdřív si ověř, kde běžíš. Agenty s taby v prohlížeči máš v Claude Code a v Coworku — v obyčejném chatu claude.ai nejsou. Když prohlížeč nemáš, řekni to hned a přejdi na záložní cestu: rubrika a seznam záběrů vzniknou stejně, ale obrázky a odkazy dodá pisatel — stejná předávka jako u nedostupného webu níž. Nezaseknout se, neobcházet.
+Nejdřív si ověř, kde běžíš. Agenty s taby v prohlížeči máš v Claude Code a v Coworku — v obyčejném chatu claude.ai nejsou. Když prohlížeč nemáš, řekni to hned a přejdi na záložní cestu: rubrika a seznam záběrů vzniknou stejně, ale obrázky a odkazy dodá produkťák — stejná předávka jako u nedostupného webu níž. Nezaseknout se, neobcházet.
 
 Rozešli agenty — jednoho na referenta. Ne na stránku a nikdy dva referenty do jednoho agenta. Odhad „jak to nejspíš funguje" vzniká z porovnání víc stránek téhož webu; když každou stránku dělá jiný agent, rubrika se vyplní, ale mechanismu nikdo neporozumí. A slepit dva nesouvisející referenty do jednoho agenta z něj udělá kritickou cestu celého kroku, aniž by z toho něco získal. Když má referent hodně stránek, rozděl ho podle otázek z rubriky, ne podle stránek.
 
@@ -67,7 +67,7 @@ Nikdy neotvírej stránku, aniž bys věděl, který řádek rubriky tím zavír
 - Slučuj kroky do jednoho volání — otevřít stránku, udělat screenshot a přečíst text stránky jde naráz. Nedělej to na tři volání.
 - Pravidlo zastavení: jakmile je řádek rubriky u daného referenta zodpovězený, přestaň se dívat. Nedoplňuj matici pro krásu — napiš „nezjištěno" a jdi dál.
 - Neopakuj se. Když dva referenti řeší věc stejně, napiš to jednou a u druhého odkaž.
-- Když je web nedostupný (blokace, přihlášení, souhlasy), nezasekni se — řekni to pisateli a vyžádej si screenshoty. Stejná předávka jako u kódu v kroku 2.
+- Když je web nedostupný (blokace, přihlášení, souhlasy), nezasekni se — řekni to produkťákovi a vyžádej si screenshoty. Stejná předávka jako u kódu v kroku 2.
 - Souhlasy s cookies odklikávej co nejvíc odmítavě a nezakládej účty.
 
 Zásadní: „nenašel jsem to ve zdrojovém HTML" neznamená „není to tam". Bloky se souvisejícím obsahem se často donačítají až po vykreslení stránky, takže ve zdroji nejsou. Absence ve statickém načtení není důkaz — musíš to vidět v prohlížeči.

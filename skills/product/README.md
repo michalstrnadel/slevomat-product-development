@@ -1,4 +1,4 @@
-# Pro Romču — co jsme s tvými skilly udělali
+# Pro Romču — co jsem iteroval
 
 Stav k 17. 8. 2026. Tři soubory vedle jsou tvoje kroky 1–3. Krok 4 se přesunul do `../design/design-prototypovani.md`, protože kreslení je designová práce a vzal si ho Michal.
 

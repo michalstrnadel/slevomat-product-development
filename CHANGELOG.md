@@ -4,6 +4,14 @@
 
 Záznamy do v0.24.0 popisují Claude Code plugin, který v tomhle repu žil do 17. 8. 2026 a je v tagu `plugin-archive-v0.24.0`. Zůstávají tady, protože ledger, který se přepisuje, aby vypadal konzistentně, je horší než ledger s historií.
 
+## v1.2.1 — 2026-08-18
+
+**Druhý běh: principy prošly, zbylé dva ne — a jeden z nich kvůli včerejší opravě.** Pravidlo „smíš odevzdat neúplný brief označený jako neúplný" skill poslechl doslova a odevzdal dokument, kde bylo deset z šestnácti sekcí prázdných, s hlavičkou NEPOSÍLAT. Mířilo na sety a screenshoty, které člověk nemá po ruce; podmínka zabití je ale jedna věta, na kterou nepotřebuje nic dohledávat. Krok 4 teď rozlišuje dva druhy chybějícího vstupu: co se dohledává (závorka je v pořádku, ale dokument z většiny závorek není brief, je formulář) a co se dá říct hned (bez toho brief neodevzdávej vůbec, ani označený). K tomu dvě poctivé cesty, které se mají nabídnout místo briefu — psani-zadani, nebo na tenhle termín prototyp nestavět — a pokyn říct to jednou, protože pátá repetice nepřesvědčuje, otravuje.
+
+**Publikum je nově pátá vstupní otázka.** Jméno vlastníka rozhodnutí, který na té poradě sedí, publikum není: koncept, který nemá kdo zabít, projde vždycky. A „testování neplánujeme" se nebere jako odpověď.
+
+**Krok 3: kázeň platí i na tvrzení o našem vlastním systému.** Skill napsal „vazby se u nás plní ručně v adminu" jako fakt a o dvě zprávy později se na to sám zeptal — uprostřed přednášky o neoznačených domněnkách.
+
 ## v1.2.0 — 2026-08-18
 
 **Evaly poprvé proběhly, všech pět, a tři z nich spadly.** Do dneška byly scénáře napsané, ale nikdy nehrané — tohle je první běh proti skillům, jak leží v repu. Krok 1 a krok 2 prošly. Ostatní tři dostaly opravu přesně tam, kam grader ukázal.

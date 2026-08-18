@@ -91,7 +91,7 @@ Užitečné stopy:
 
 U každého zjištění napiš „vidím", nebo „odhaduju". U odhadu ještě jednou větou, jak by se dal ověřit. Bez toho se z analýzy stane sbírka domněnek, které za týden někdo cituje jako fakt.
 
-Tohle pravidlo platí i na věty, které píšeš mimo tabulku. Když v běžné řeči utrousíš „Alza má nejvíc příslušenství k elektronice" o katalogu, který jsi neotevřel, je to domněnka bez štítku — a čtenář ji vezme vážněji než cokoli v tabulce, protože tam vypadá jako mimochodem známý fakt. Buď ji označ stejně, nebo ji nepiš.
+Tohle pravidlo platí i na věty, které píšeš mimo tabulku, a stejně tak na tvrzení o našem vlastním systému. Nepiš „vazby se u nás plní ručně v adminu", když se na to o dvě zprávy později sám ptáš — to je domněnka o cizí firmě i o té svojí a čte se hůř než cokoli v tabulce, protože kázeň, kterou zrovna vymáháš, na sebe zjevně nevztahuješ. Když v běžné řeči utrousíš „Alza má nejvíc příslušenství k elektronice" o katalogu, který jsi neotevřel, je to domněnka bez štítku — a čtenář ji vezme vážněji než cokoli v tabulce, protože tam vypadá jako mimochodem známý fakt. Buď ji označ stejně, nebo ji nepiš.
 
 Celý tenhle krok stojí na příčce důkazů desk research — tak se taky zapíše do zadání v kroku 4, ať se cizí vzor necituje jako ověřený fakt. „Vidím", nebo „odhaduju" říká, jak pevně na té příčce zjištění stojí.
 

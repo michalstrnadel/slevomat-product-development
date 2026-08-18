@@ -3,7 +3,7 @@ name: design-prototypovani
 description: "Předávací bod mezi produktem a designem (krok 4 produktové práce) — napíše zadání pro Claude Design (nebo pro designéra) na prototyp konceptu, který už má někdo rozmyšlený — produkťák, designér nebo výzkumník. Výstupem je samonosný brief, se kterým se dá odstartovat konverzace s designem — obsahuje HMW, cíl, kontext systému, tvrdá omezení, ověřená doporučení, stavy a co má prototyp ověřit. Použij vždy, když chce někdo nechat nakreslit nebo naprototypovat produktový koncept. Triggeruj na fráze jako: zadání pro design, prompt pro claude design, brief pro designéra, chci to nadesignovat, chci prototyp, nechte to nakreslit, připrav zadání designérovi, jdeme prototypovat, chci si to nakreslit, zadání na prototyp. Navazuje na skilly product-definice-problemu-a-hmw, product-mapovani-stavu a product-konkurence-inspirace. NEPOUŽÍVEJ, když člověk nemá za sebou rámování a mapování — tam patří nejdřív product-definice-problemu-a-hmw."
 ---
 <!-- owner: Michal Strnadel -->
-<!-- version: 0.3.0 -->
+<!-- version: 0.4.0 -->
 <!-- updated: 2026-08-18 -->
 
 # Zadání pro design
@@ -28,16 +28,17 @@ Délku tomu podřiď. Dlouhý brief není známka důkladnosti, ale toho, kolik 
 
 A celý brief vypiš jako **jeden blok ke zkopírování**. Produkťák ho vkládá do nové konverzace v Claude Design — skládání ze tří zpráv je přesně to místo, kde se půlka ztratí.
 
-## Nejdřív se zeptej na čtyři věci
+## Nejdřív se zeptej na pět věcí
 
 Bez nich bude zadání vágní:
 
 - **Rozsah** — jen nové věci, nebo i to, co už existuje? Kreslit celou obrazovku, nebo výřezy? (Když se přidává něco do existující stránky, obvykle je správné kreslit ji celou, protože rozhodnutí o hierarchii nejde udělat po částech.)
 - **Věrnost** — drátěný model, nebo vizuál? Design systém se neřeší otázkou: prototypy se u nás stavějí v **Mini*S**. Brief ho jmenuje a vizuální pravidla nepopisuje — ta jsou v instrukcích design systému, ne v briefu.
 - **Zařízení** — mobil, desktop, nebo obojí.
+- **Komu se prototyp ukáže** — jména a datum, a aspoň jeden člověk mimo tu místnost, kde se o něm rozhoduje. Vlastník rozhodnutí, který na té poradě sedí, publikum není; koncept, který nemá kdo zabít, projde vždycky. Když člověk řekne „testování neplánujeme", neber to jako odpověď — zeptej se, kdo z lidí mimo produkt to uvidí, než se z toho stane rozhodnutí.
 - **Kolik směrů** — jeden dotažený návrh, nebo dva až tři odlišné směry vedle sebe? Neptej se naprázdno, rovnou doporuč: když má HMW otázka víc rozumných odpovědí a z kroků 1 až 3 žádná nevyšla jako vítěz, chtěj víc směrů v hrubé věrnosti. Když je koncept rozhodnutý a jde už jen o provedení, chtěj jeden a dotažený.
 
-Ta čtvrtá otázka tam je proto, že Claude Design ti sám od sebe nakreslí první řešení, které mu přijde dobré, a od druhé zprávy dál už jen vylepšuje jeho. Debata se tím posune z „je tohle správný směr?" na „co s ním ještě uděláme" — a to je tiché rozhodnutí, které nikdo neudělal.
+Ta poslední otázka tam je proto, že Claude Design ti sám od sebe nakreslí první řešení, které mu přijde dobré, a od druhé zprávy dál už jen vylepšuje jeho. Debata se tím posune z „je tohle správný směr?" na „co s ním ještě uděláme" — a to je tiché rozhodnutí, které nikdo neudělal.
 
 ## Odkud brát obsah briefu
 
@@ -51,7 +52,14 @@ Když některý krok neproběhl, napiš to do briefu jako chybějící vstup a �
 
 **Co jsi nedostal, si nedomýšlej — ani jednou větou.** Do chybějícího vstupu patří závorka s tím, co se má doplnit, ne tvůj odhad, jak to nejspíš je. Odhad napsaný v sekci „tohle nevíme" je pořád instrukce: bude to nejkonkrétnější věta v briefu plném závorek, takže je to přesně to, co designér poslechne.
 
-**A odmítnutí nemá expiraci.** Když řekneš „bez těchhle vstupů brief nenapíšu, protože bych psal fikci", tak ho o dvě zprávy později nenapiš jen proto, že člověk spěchá. Buď to platí, nebo to neříkej — hranice, která vydrží dvě zprávy, znehodnotí i každou další. Když vstupy nepřijdou, můžeš odevzdat **neúplný brief označený jako neúplný**: nahoře seznam toho, co chybí, a věta, že takhle se posílat nemá. Co nesmíš, je předat ho jako hotový.
+**A odmítnutí nemá expiraci.** Když řekneš „bez těchhle vstupů brief nenapíšu, protože bych psal fikci", tak ho o dvě zprávy později nenapiš jen proto, že člověk spěchá. Buď to platí, nebo to neříkej — hranice, která vydrží dvě zprávy, znehodnotí i každou další.
+
+Rozliš přitom dva druhy chybějících vstupů:
+
+- **Co člověk nemá po ruce** — sety z katalogu, screenshoty, čísla z mapování. Tady smíš odevzdat brief se závorkami, když nahoře stojí, co chybí a že takhle se posílat nemá. Ale hlídej si poměr: dokument, kde je většina sekcí prázdná, není brief, je formulář. Když se to tam blíží, řekni to rovnou a nabídni, že počkáš.
+- **Co ti může říct hned** — co má prototyp ověřit, co by koncept zabilo, komu se ukáže. Na tohle nepotřebuje nic dohledávat, stačí jedna věta. **Bez nich brief neodevzdávej vůbec**, ani označený. Prototyp bez předem napsané podmínky selhání selhat nemůže a vyrobí mandát místo odpovědi — to je celý důvod, proč krok 4 existuje, takže to není pole k vyplnění později.
+
+Když je nechce napsat, máš dvě poctivé cesty a nabídni je místo briefu: buď je tvar rozhodnutý a nepotřebuje design, pak jde rovnou na psani-zadani, nebo se na tenhle termín prototyp stavět nemá. Vysvětluj to jednou. Když to zopakuješ popáté, nepřesvědčuješ, otravuješ.
 
 ## Struktura briefu
 

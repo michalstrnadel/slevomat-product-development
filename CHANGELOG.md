@@ -4,6 +4,12 @@
 
 Záznamy do v0.24.0 popisují Claude Code plugin, který v tomhle repu žil do 17. 8. 2026 a je v tagu `plugin-archive-v0.24.0`. Zůstávají tady, protože ledger, který se přepisuje, aby vypadal konzistentně, je horší než ledger s historií.
 
+## v1.1.0 — 2026-08-18
+
+**Krok 4 se nově ptá, kolik směrů chceš.** Claude Design sám od sebe nakreslí první řešení, které mu přijde dobré, a od druhé zprávy dál už jen vylepšuje jeho — debata se posune z „je tohle správný směr?" na „co s ním ještě uděláme", aniž to někdo rozhodl. `design-prototypovani` má proto čtvrtou vstupní otázku vedle rozsahu, věrnosti a zařízení, a s doporučením místo prázdného dotazu: víc směrů v hrubé věrnosti, když má HMW otázka víc rozumných odpovědí a žádná z kroků 1 až 3 nevyšla jako vítěz; jeden a dotažený, když je koncept rozhodnutý a jde o provedení. Odpověď jde do briefu číslem a s tím, v čem se mají směry lišit — když tam ta věta není, počet si vybere designér. Eval na krok 4 to hlídá z obou stran: musí se zeptat, a nesmí odevzdat brief, který počet nechá nevyřčený.
+
+**Frontmatter je konečně platný YAML.** `description` obsahuje dvojtečky s mezerou („na fráze: design check"), a nebyla v uvozovkách — YAML to čte jako začátek vnořené mapy a odmítne celý blok, takže GitHub přestal soubory renderovat a přísnější čtenář přišel o description úplně. Rozbité to bylo v pěti souborech ze šesti. Validátor to teď hlásí jako chybu, ne aby se na to zas přišlo přes renderer.
+
 ## v1.0.1 — 2026-08-17
 
 **Poznámky pryč, protože obě lhaly.** `notes/2026-08-13-design-principles-kde-co-je.md` navigovala ke složce, která se přesunula, a jediný věcný údaj, který nesla — původ principů z interního workshopu 28. 4. — je stejně přímo v `design-principles.md` ve frontmatteru. `notes/2026-08-13-dve-drahy-review.md` bylo review, které rozhodlo, jak mají skilly vypadat, jenže po dnešku má šestnáct odkazů na plugin, který v tomhle repu není, a moje dřívější dávkové přejmenování mu rozbilo věty. Jeho obsah přežil na lepším místě: **u každého pravidla ve skillu stojí jeho důvod hned pod ním** — což je domácí pravidlo, ne náhrada — a shrnutí změn je v README u skillů. Obojí je v gitu i v tagu.

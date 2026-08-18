@@ -3,8 +3,8 @@ name: design-prototypovani
 description: "Předávací bod mezi produktem a designem (krok 4 produktové práce) — napíše zadání pro Claude Design (nebo pro designéra) na prototyp konceptu, který už má někdo rozmyšlený — produkťák, designér nebo výzkumník. Výstupem je samonosný brief, se kterým se dá odstartovat konverzace s designem — obsahuje HMW, cíl, kontext systému, tvrdá omezení, ověřená doporučení, stavy a co má prototyp ověřit. Použij vždy, když chce někdo nechat nakreslit nebo naprototypovat produktový koncept. Triggeruj na fráze jako: zadání pro design, prompt pro claude design, brief pro designéra, chci to nadesignovat, chci prototyp, nechte to nakreslit, připrav zadání designérovi, jdeme prototypovat, chci si to nakreslit, zadání na prototyp. Navazuje na skilly product-definice-problemu-a-hmw, product-mapovani-stavu a product-konkurence-inspirace. NEPOUŽÍVEJ, když člověk nemá za sebou rámování a mapování a chce od nuly interní nástroj, appku nebo jednorázovku — tam je slevomat-product-development."
 ---
 <!-- owner: Michal Strnadel -->
-<!-- version: 0.1.0 -->
-<!-- updated: 2026-08-14 -->
+<!-- version: 0.2.0 -->
+<!-- updated: 2026-08-18 -->
 
 # Zadání pro design
 
@@ -28,13 +28,16 @@ Délku tomu podřiď. Dlouhý brief není známka důkladnosti, ale toho, kolik 
 
 A celý brief vypiš jako **jeden blok ke zkopírování**. Produkťák ho vkládá do nové konverzace v Claude Design — skládání ze tří zpráv je přesně to místo, kde se půlka ztratí.
 
-## Nejdřív se zeptej na tři věci
+## Nejdřív se zeptej na čtyři věci
 
 Bez nich bude zadání vágní:
 
 - **Rozsah** — jen nové věci, nebo i to, co už existuje? Kreslit celou obrazovku, nebo výřezy? (Když se přidává něco do existující stránky, obvykle je správné kreslit ji celou, protože rozhodnutí o hierarchii nejde udělat po částech.)
 - **Věrnost** — drátěný model, nebo vizuál? Design systém se neřeší otázkou: prototypy se u nás stavějí v **Mini*S**. Brief ho jmenuje a vizuální pravidla nepopisuje — ta jsou v instrukcích design systému, ne v briefu.
 - **Zařízení** — mobil, desktop, nebo obojí.
+- **Kolik směrů** — jeden dotažený návrh, nebo dva až tři odlišné směry vedle sebe? Neptej se naprázdno, rovnou doporuč: když má HMW otázka víc rozumných odpovědí a z kroků 1 až 3 žádná nevyšla jako vítěz, chtěj víc směrů v hrubé věrnosti. Když je koncept rozhodnutý a jde už jen o provedení, chtěj jeden a dotažený.
+
+Ta čtvrtá otázka tam je proto, že Claude Design ti sám od sebe nakreslí první řešení, které mu přijde dobré, a od druhé zprávy dál už jen vylepšuje jeho. Debata se tím posune z „je tohle správný směr?" na „co s ním ještě uděláme" — a to je tiché rozhodnutí, které nikdo neudělal.
 
 ## Odkud brát obsah briefu
 
@@ -119,6 +122,10 @@ Seznam. Plochy, zařízení, stavy, celý kontext obrazovky. A dvě věci, kter�
 - Názor, co ubrat, když je rozsah vědomě velký
 - Seznam míst, kde mu chyběla komponenta v design systému nebo kde musel něco rozhodnout za vás
 
+**Kolik směrů, napsané číslem.** Ne „udělej varianty", ale „dva směry, které řeší HMW #2 každý jinak". Když chceš jeden, napiš i to — bez téhle věty si počet vybere designér za tebe. A ať se směry liší v tom, jak řeší problém, ne v barvě tlačítka; tři odstíny téhož nejsou volba.
+
+Když chceš víc směrů, přidej do briefu i tuhle větu: *„Nakresli směry nejdřív hrubě a nech mě vybrat, než začneš cokoli dotahovat."* Jinak dostaneš jeden hotový a dva odbyté.
+
 ### 16. Otázky, které má vyhodit nahoru, ne rozhodnout sám
 
 Věci, které nejsou designové, ale produktové nebo obchodní. Bez tohohle seznamu je designér rozhodne potichu a vy to zjistíte pozdě.
@@ -148,6 +155,7 @@ Hotový brief se neodešle, nabídne se: *„Napsal jsem zadání — projdi ho 
 - Je řečeno, co je nepřekročitelné
 - Je vyjmenované, co má vyhodit nahoru místo rozhodnutí
 - Není tam napsané rozvržení — to už by byla specifikace
+- Je napsané, kolik směrů chceš a v čem se mají lišit
 - Brief je jeden blok ke zkopírování a byl nabídnut k projití, ne odeslán
 
 ## Co následuje

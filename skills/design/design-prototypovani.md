@@ -1,6 +1,6 @@
 ---
 name: design-prototypovani
-description: "Předávací bod mezi produktem a designem (krok 4 produktové práce) — napíše zadání pro Claude Design (nebo pro designéra) na prototyp konceptu, který už má někdo rozmyšlený — produkťák, designér nebo výzkumník. Výstupem je samonosný brief, se kterým se dá odstartovat konverzace s designem — obsahuje HMW, cíl, kontext systému, tvrdá omezení, ověřená doporučení, stavy a co má prototyp ověřit. Použij vždy, když chce někdo nechat nakreslit nebo naprototypovat produktový koncept. Triggeruj na fráze jako: zadání pro design, prompt pro claude design, brief pro designéra, chci to nadesignovat, chci prototyp, nechte to nakreslit, připrav zadání designérovi, jdeme prototypovat, chci si to nakreslit, zadání na prototyp. Navazuje na skilly product-definice-problemu-a-hmw, product-mapovani-stavu a product-konkurence-inspirace. NEPOUŽÍVEJ, když člověk nemá za sebou rámování a mapování a chce od nuly interní nástroj, appku nebo jednorázovku — tam je slevomat-product-development."
+description: "Předávací bod mezi produktem a designem (krok 4 produktové práce) — napíše zadání pro Claude Design (nebo pro designéra) na prototyp konceptu, který už má někdo rozmyšlený — produkťák, designér nebo výzkumník. Výstupem je samonosný brief, se kterým se dá odstartovat konverzace s designem — obsahuje HMW, cíl, kontext systému, tvrdá omezení, ověřená doporučení, stavy a co má prototyp ověřit. Použij vždy, když chce někdo nechat nakreslit nebo naprototypovat produktový koncept. Triggeruj na fráze jako: zadání pro design, prompt pro claude design, brief pro designéra, chci to nadesignovat, chci prototyp, nechte to nakreslit, připrav zadání designérovi, jdeme prototypovat, chci si to nakreslit, zadání na prototyp. Navazuje na skilly product-definice-problemu-a-hmw, product-mapovani-stavu a product-konkurence-inspirace. NEPOUŽÍVEJ, když člověk nemá za sebou rámování a mapování — tam patří nejdřív product-definice-problemu-a-hmw."
 ---
 <!-- owner: Michal Strnadel -->
 <!-- version: 0.2.0 -->
@@ -16,7 +16,7 @@ Použij, když je koncept už rozmyšlený — je jasné, jaké plochy nebo obra
 
 Nepoužívej, když koncept ještě není. Když produkťák neví, co má vzniknout, vrať ho na krok 1 až 3 — bez zrámovaného problému a bez znalosti současného stavu vznikne brief, který designéra pošle hádat.
 
-Nepoužívej ani na interní nástroje a jednorázovky stavěné od nuly, bez procesu za sebou — tam je slevomat-product-development, který si rozhovor o problému teprve vede. Tenhle skill předpokládá, že rozhovor už proběhl v krocích 1 až 3.
+Nepoužívej ani na interní nástroje a jednorázovky stavěné od nuly, bez procesu za sebou. Tenhle skill předpokládá, že rozhovor o problému už proběhl v krocích 1 až 3 — když ne, začni krokem 1, product-definice-problemu-a-hmw.
 
 A jedna hranice, na kterou pozor: když v zadání píšeš rozvržení, píšeš už specifikaci, ne brief pro design. Brief říká jaký problém, jaká omezení a jak pozná dobrý výsledek. Neříká „udělej modál se třemi dlaždicemi". Když produkťák přesně ví, jak to má vypadat, nepotřebuje designéra a má jít na skill psani-zadani.
 

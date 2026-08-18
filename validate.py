@@ -31,6 +31,9 @@ EVALS = SKILLS / "evals"
 
 MAX_DESCRIPTION_CHARS = 1024
 
+# Skills that live elsewhere in the Hub. Naming one is fine, we just cannot resolve it.
+EXTERNAL = {"slevomat-code", "slevomat-documentation", "slevomat-docs", "slevomat-ai-hub"}
+
 # A description that never says when to stay away collides with its neighbours, and in
 # a flat list a trigger collision is the second most common way a skill fails.
 BOUNDARY_MARKERS = ("NEPOUŽÍVEJ", "Nepoužívej", "NEPOUZIVEJ", "Do NOT use", "do NOT use")
@@ -192,20 +195,23 @@ def check_skill(path: Path, lane: str) -> str | None:
 
 
 def check_references(paths: list[tuple[Path, str]], known: set[str]) -> None:
-    """A body naming a skill that does not exist sends the reader nowhere.
+    """A skill naming a skill that does not exist sends the reader nowhere.
 
-    Only names shaped like this family are checked. Skills owned elsewhere in the Hub —
-    psani-zadani, data-chat, slevomat-code — are outside this repo's control.
+    Only names shaped like this family are checked, and EXTERNAL lists the ones owned
+    elsewhere in the Hub. Everything else has to resolve here, description included: the
+    plugin's slevomat-product-development was named in two descriptions for a day after it
+    was archived, and nothing complained because only bodies were read.
     """
-    # The lookarounds matter: without them 'slevomat-design-principles' yields a phantom
-    # 'design-principles', and the file path docs/.../product-variants.md yields a phantom
-    # skill. Neither is a reference.
-    pattern = re.compile(r"(?<![\w/-])((?:product|design)-[a-z0-9-]+)(?![\w/-]|\.md)")
+    # The lookarounds matter: without them the file path docs/.../product-variants.md
+    # yields a phantom skill, and slevomat-code yields a phantom 'code'.
+    pattern = re.compile(
+        r"(?<![\w/-])((?:slevomat|product|design)-[a-z0-9-]+)(?![\w/-]|\.md)")
     for path, _ in paths:
         rel = path.relative_to(ROOT)
         for match in sorted(set(pattern.findall(path.read_text(encoding="utf-8")))):
-            if match not in known:
-                fail(f"{rel}: names {match!r}, which does not exist")
+            if match not in known and match not in EXTERNAL:
+                fail(f"{rel}: names {match!r}, which does not exist. Skills owned "
+                     f"elsewhere in the Hub belong in EXTERNAL.")
 
 
 def check_hub_limits() -> None:

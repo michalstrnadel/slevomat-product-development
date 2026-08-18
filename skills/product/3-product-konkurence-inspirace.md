@@ -4,7 +4,7 @@ description: "Třetí krok produktové práce ve Slevomat Group — zjistit, jak
 ---
 <!-- owner: Romana Trušinová -->
 <!-- version: 0.1.0 -->
-<!-- updated: 2026-08-14 -->
+<!-- updated: 2026-08-18 -->
 
 # Konkurence a inspirace
 
@@ -90,6 +90,8 @@ Užitečné stopy:
 | Podívej se, jestli má blok cenu celku a jedno tlačítko | Pak je to balíček jako samostatný produkt, ne odkaz. |
 
 U každého zjištění napiš „vidím", nebo „odhaduju". U odhadu ještě jednou větou, jak by se dal ověřit. Bez toho se z analýzy stane sbírka domněnek, které za týden někdo cituje jako fakt.
+
+Tohle pravidlo platí i na věty, které píšeš mimo tabulku. Když v běžné řeči utrousíš „Alza má nejvíc příslušenství k elektronice" o katalogu, který jsi neotevřel, je to domněnka bez štítku — a čtenář ji vezme vážněji než cokoli v tabulce, protože tam vypadá jako mimochodem známý fakt. Buď ji označ stejně, nebo ji nepiš.
 
 Celý tenhle krok stojí na příčce důkazů desk research — tak se taky zapíše do zadání v kroku 4, ať se cizí vzor necituje jako ověřený fakt. „Vidím", nebo „odhaduju" říká, jak pevně na té příčce zjištění stojí.
 

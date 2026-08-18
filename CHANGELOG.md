@@ -4,6 +4,16 @@
 
 Záznamy do v0.24.0 popisují Claude Code plugin, který v tomhle repu žil do 17. 8. 2026 a je v tagu `plugin-archive-v0.24.0`. Zůstávají tady, protože ledger, který se přepisuje, aby vypadal konzistentně, je horší než ledger s historií.
 
+## v1.2.0 — 2026-08-18
+
+**Evaly poprvé proběhly, všech pět, a tři z nich spadly.** Do dneška byly scénáře napsané, ale nikdy nehrané — tohle je první běh proti skillům, jak leží v repu. Krok 1 a krok 2 prošly. Ostatní tři dostaly opravu přesně tam, kam grader ukázal.
+
+**Krok 4 dvakrát porušil vlastní pravidlo.** Řekl tvrdou hranici — „bez těchhle vstupů brief nenapíšu, protože bych ti napsal fikci" — a o zprávu později, aniž cokoli dostal, začal slovy „Píšu ho.". Hranice, která vydrží dvě zprávy, je vyjednávací pozice a znehodnotí i každé další odmítnutí. A v sekci „Mapování neproběhlo" si vymyslel omezení i rozvržení: „ruční zakládání znamená málo položek, tedy nikdy pevná mřížka", tři řádky pod vlastní větou „Neodhaduj je; ptej se". Odhad napsaný do sekce „tohle nevíme" je pořád instrukce — v briefu plném závorek je to ta nejkonkrétnější věta, takže je to přesně to, co designér poslechne. Skill teď smí odevzdat **neúplný brief označený jako neúplný**, ale ne ho předat jako hotový, a do checklistu přibyly dva řádky: vyplněná podmínka zabití a žádná chybějící informace nahrazená odhadem.
+
+**Principy měly tu chybu ve vlastním příkladu.** Ukázka s blikajícím odpočtem a počtem dívajících se lidí končila tabulkou, kde princip 7 dostal „Drží" — na základě toho, že ten nápad chtěl být příjemný. Zelený řádek opřený o dobrý úmysl, ve zprávě, která o pár řádků níž koncept vrací se slovy „stojí na křiku". Příklad teď má „Nejde posoudit" a k verdiktům přibylo pravidlo: „Drží" musí stát na pozorování, které jde ze vstupu citovat — záměr autora pozorování není.
+
+**Krok 3 dodržoval „vidím / odhaduju" jen v tabulce.** V jednom tahu odmítl hádat („Ne. Tohle jediné neudělám."), v následujícím napsal „Alza má nejvíc příslušenství k elektronice" o katalogu, který nikdo neotevřel, a bez štítku. Pravidlo teď výslovně platí i na věty mimo tabulku — tam se domněnka čte důvěryhodněji, protože vypadá jako mimochodem známý fakt. Je to zásah do Romčina textu, disciplína zůstala její, jen platí i na řeč okolo.
+
 ## v1.1.0 — 2026-08-18
 
 **Krok 4 se nově ptá, kolik směrů chceš.** Claude Design sám od sebe nakreslí první řešení, které mu přijde dobré, a od druhé zprávy dál už jen vylepšuje jeho — debata se posune z „je tohle správný směr?" na „co s ním ještě uděláme", aniž to někdo rozhodl. `design-prototypovani` má proto čtvrtou vstupní otázku vedle rozsahu, věrnosti a zařízení, a s doporučením místo prázdného dotazu: víc směrů v hrubé věrnosti, když má HMW otázka víc rozumných odpovědí a žádná z kroků 1 až 3 nevyšla jako vítěz; jeden a dotažený, když je koncept rozhodnutý a jde o provedení. Odpověď jde do briefu číslem a s tím, v čem se mají směry lišit — když tam ta věta není, počet si vybere designér. Eval na krok 4 to hlídá z obou stran: musí se zeptat, a nesmí odevzdat brief, který počet nechá nevyřčený.

@@ -3,7 +3,7 @@ name: design-prototypovani
 description: "Předávací bod mezi produktem a designem (krok 4 produktové práce) — napíše zadání pro Claude Design (nebo pro designéra) na prototyp konceptu, který už má někdo rozmyšlený — produkťák, designér nebo výzkumník. Výstupem je samonosný brief, se kterým se dá odstartovat konverzace s designem — obsahuje HMW, cíl, kontext systému, tvrdá omezení, ověřená doporučení, stavy a co má prototyp ověřit. Použij vždy, když chce někdo nechat nakreslit nebo naprototypovat produktový koncept. Triggeruj na fráze jako: zadání pro design, prompt pro claude design, brief pro designéra, chci to nadesignovat, chci prototyp, nechte to nakreslit, připrav zadání designérovi, jdeme prototypovat, chci si to nakreslit, zadání na prototyp. Navazuje na skilly product-definice-problemu-a-hmw, product-mapovani-stavu a product-konkurence-inspirace. NEPOUŽÍVEJ, když člověk nemá za sebou rámování a mapování — tam patří nejdřív product-definice-problemu-a-hmw."
 ---
 <!-- owner: Michal Strnadel -->
-<!-- version: 0.2.0 -->
+<!-- version: 0.3.0 -->
 <!-- updated: 2026-08-18 -->
 
 # Zadání pro design
@@ -48,6 +48,10 @@ Ta čtvrtá otázka tam je proto, že Claude Design ti sám od sebe nakreslí pr
 **Příčky důkazů.** U každého tvrzení napiš, na které příčce stojí (od nejsilnější): behaviorální data / tickety zákaznické péče a partnerské podpory / rozhovory / desk research / domněnka. Domněnka je platná příčka, jen ji nevydávej za zjištění. Tvrzení si příčku nesou z kroků 1 až 3 — designér pak ví, o co se smí opřít.
 
 Když některý krok neproběhl, napiš to do briefu jako chybějící vstup a řekni, co z toho plyne. Brief bez omezení z mapování vede k designu, který se nedá postavit.
+
+**Co jsi nedostal, si nedomýšlej — ani jednou větou.** Do chybějícího vstupu patří závorka s tím, co se má doplnit, ne tvůj odhad, jak to nejspíš je. Odhad napsaný v sekci „tohle nevíme" je pořád instrukce: bude to nejkonkrétnější věta v briefu plném závorek, takže je to přesně to, co designér poslechne.
+
+**A odmítnutí nemá expiraci.** Když řekneš „bez těchhle vstupů brief nenapíšu, protože bych psal fikci", tak ho o dvě zprávy později nenapiš jen proto, že člověk spěchá. Buď to platí, nebo to neříkej — hranice, která vydrží dvě zprávy, znehodnotí i každou další. Když vstupy nepřijdou, můžeš odevzdat **neúplný brief označený jako neúplný**: nahoře seznam toho, co chybí, a věta, že takhle se posílat nemá. Co nesmíš, je předat ho jako hotový.
 
 ## Struktura briefu
 
@@ -156,6 +160,8 @@ Hotový brief se neodešle, nabídne se: *„Napsal jsem zadání — projdi ho 
 - Je vyjmenované, co má vyhodit nahoru místo rozhodnutí
 - Není tam napsané rozvržení — to už by byla specifikace
 - Je napsané, kolik směrů chceš a v čem se mají lišit
+- Podmínka, která koncept zabije, je vyplněná — ne závorka
+- Žádná chybějící informace není nahrazená odhadem
 - Brief je jeden blok ke zkopírování a byl nabídnut k projití, ne odeslán
 
 ## Co následuje

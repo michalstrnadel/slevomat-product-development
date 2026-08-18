@@ -4,8 +4,8 @@ description: "Posoudí nápad, popis obrazovky nebo screenshot proti 7 designov�
 ---
 
 <!-- owner: Michal Strnadel -->
-<!-- version: 0.2.0 -->
-<!-- updated: 2026-08-13 -->
+<!-- version: 0.3.0 -->
+<!-- updated: 2026-08-18 -->
 
 # Design check proti 7 principům
 
@@ -23,6 +23,8 @@ Principy čti z přiloženého `design-principles.md`. Necituj je z hlavy — ka
 - **Nejde posoudit** — ze vstupu to nepoznáš
 
 „Nejde posoudit" je platný výsledek a je férovější než falešné „Drží" — falešné „Drží" si někdo odnese na poradu jako schválení. Vždycky ale napiš, co by stačilo dodat, aby posoudit šlo.
+
+**„Drží" musí stát na pozorování, které umíš citovat ze vstupu.** Záměr autora pozorování není: „chtěli přidat do nákupu moment" říká, co člověk zamýšlel, ne co v návrhu je. Když nemáš co citovat, je to „Nejde posoudit". Zelený řádek opřený o dobrý úmysl je ten, kterým se pak mává jako schválením — a ještě si protiřečí se závěrem, který o pár řádků níž koncept vrací.
 
 ## Postup
 
@@ -78,7 +80,9 @@ Když screenshot obsahuje osobní údaje (jména, e-maily, čísla objednávek),
 
 Vstup: *„Na detail nabídky chceme plovoucí lištu s odpočtem do konce slevy a počtem lidí, kteří se zrovna dívají. Červený banner, animovaný odpočet, blikající Kupte teď."*
 
-Tabulka: 1 Riziko · 2 Porušuje · 3 Porušuje · 4 Porušuje · 5 Nejde posoudit · 6 Riziko · 7 Drží.
+Tabulka: 1 Riziko · 2 Porušuje · 3 Porušuje · 4 Porušuje · 5 Nejde posoudit · 6 Riziko · 7 Nejde posoudit.
+
+Sedmičku nesváděj k „Drží" tím, že ten nápad chtěl být příjemný. V červeném banneru, animovaném odpočtu a blikajícím tlačítku není nic, co by se dalo citovat jako překvapení, které potěší.
 
 Detail u #3: *„výhodnost má v designu své místo, ale nemusí křičet"* — blikající „Kupte teď" je přesný opak. Oprava: štítek s koncem akce bez animace, jedna barva z palety.
 

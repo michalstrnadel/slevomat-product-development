@@ -8,169 +8,142 @@ description: "Předávací bod mezi produktem a designem (krok 4 produktové pr�
 
 # Zadání pro design
 
-Krok 4 produktového procesu. Cílem je samonosný brief, se kterým produkťák odstartuje konverzaci s Claude Design a dostane prototyp.
+Čtvrtý krok. Koncept je rozmyšlený a jde se designovat a prototypovat — je jasné, jaká feature vzniká, jaké obrazovky k ní patří a kudy jimi člověk projde. Sepiš design brief, se kterým se dá otevřít konverzace s Claude Design. Tenhle skill zadání sepisuje, nevymýšlí ho.
 
-## Kdy to použít a kdy ne
+Nepoužívej, když koncept ještě není. Bez zrámovaného problému a bez znalosti současného stavu vznikne brief, který designéra pošle hádat — vrať se na kroky 1 až 3.
 
-Použij, když je koncept už rozmyšlený — je jasné, jaké plochy nebo obrazovky mají vzniknout a co na nich má být. Tenhle skill zadání sepisuje, nevymýšlí ho.
+Když ti někdo rovnou diktuje tvar — „udělej modál se třemi dlaždicemi" — neber to jako hotovou věc, ale ani ho neposílej pryč. Zeptej se, odkud ten tvar je a co by ho zbouralo. Většinou se ukáže, že rozhodnutý není a je to nápad z porady; pak píšeš normální brief a tvar do něj nedáváš. Když rozhodnutý opravdu je, na kreslení už designéra nepotřebuješ — jdi na psani-zadani, nebo si k tomu vyžádej feedback od designéra.
 
-Nepoužívej, když koncept ještě není. Když produkťák neví, co má vzniknout, vrať ho na krok 1 až 3 — bez zrámovaného problému a bez znalosti současného stavu vznikne brief, který designéra pošle hádat.
+Brief říká, jaký je problém, jaká jsou omezení a podle čeho se pozná dobrý výsledek. Neříká, jak to má vypadat.
 
-Nepoužívej ani na interní nástroje a jednorázovky stavěné od nuly, bez procesu za sebou. Tenhle skill předpokládá, že rozhovor o problému už proběhl v krocích 1 až 3 — když ne, začni krokem 1, product-definice-problemu-a-hmw.
+## Jak psát
 
-A jedna hranice, na kterou pozor: když v zadání píšeš rozvržení, píšeš už specifikaci, ne brief pro design. Brief říká jaký problém, jaká omezení a jak pozná dobrý výsledek. Neříká „udělej modál se třemi dlaždicemi". Když produkťák přesně ví, jak to má vypadat, nepotřebuje designéra a má jít na skill psani-zadani.
+- **Samonosně.** Designér nezná z vaší konverzace ani slovo. Žádné „jak jsme se bavili", žádné „ten problém, co řešíme", žádné interní zkratky bez vysvětlení. Přečti si to po sobě jako někdo, kdo o tématu slyší poprvé — kde chybí kontext tobě, chybí i jemu.
+- **Česky a lidsky.** Krátké věty. Slovníkem firmy — nabídka, výpis, košík, partner. Ať se to dá skenovat.
+- **Tak dlouhé, kolik je kontextu.** Délka není známka důkladnosti. Dlouhý brief znamená jen to, že se toho hodně přenáší.
+- **Celý brief v jednom bloku přímo v chatu.** Nevytvářej k tomu žádný soubor, dokument ani artefakt — vypiš ho v odpovědi vcelku, jako jeden blok ke zkopírování. Vkládá se do nové konverzace s Claude Design a rozdělený do tří zpráv by se z půlky ztratil. Zkopírovat se ale nemá dřív, než si ho produkťák přečte, proto ho nabídni k projití, ne k odeslání.
 
-## Pravidlo, na kterém všechno stojí
+## Na co se ptát
 
-Brief musí být samonosný. Designér nezná z vaší konverzace ani slovo. Žádné „jak jsme se bavili", žádné „ten problém, co řešíme", žádné interní zkratky bez vysvětlení. Když si to po sobě přečteš jako někdo, kdo o tématu slyší poprvé, a někde ti chybí kontext, chybí i designérovi.
+Čtyři věci. Bez nich bude brief vágní.
 
-Délku tomu podřiď. Dlouhý brief není známka důkladnosti, ale toho, kolik kontextu je potřeba přenést. Struktura ať se dá skenovat.
+**1. Co se designuje.** Nová feature, nebo celý flow? A designuje se celá obrazovka, nebo jen ta jedna feature v ní? Když se něco přidává do existující stránky, obvykle je správné vzít ji celou — hierarchii nejde rozhodnout po částech.
 
-A celý brief vypiš jako **jeden blok ke zkopírování**. Produkťák ho vkládá do nové konverzace v Claude Design — skládání ze tří zpráv je přesně to místo, kde se půlka ztratí.
+**2. Jak daleko.** Hrubý wireframe, který má rozhodnout směr, nebo rovnou návrh v komponentách? Víc se neptej: že se staví v **Mini*S**, z jeho komponent a tokenů, je dané. Jmenuj ho a vizuální pravidla nepopisuj, ta má v sobě.
 
-## Nejdřív se zeptej na pět věcí
+**3. Zařízení.** Mobil, tablet, desktop, nebo kombinace.
 
-Bez nich bude zadání vágní:
+**4. Kolik směrů.** Jeden dotažený návrh, nebo dva až tři odlišné vedle sebe? Volba je na produkťákovi, ty mu k ní dej doporučení. Když se na HMW otázku dá odpovědět víc způsoby a z kroků 1 až 3 žádný nevyhrál, doporuč dva až tři směry, každý jen ve wireframu, ať je co porovnat. Když je koncept rozhodnutý a jde už jen o provedení, doporuč jeden a dotažený. Nenech to ale nevyřčené — Claude Design pak nakreslí první rozumné řešení, které ho napadne, a od druhé zprávy dolaďuje už jenom to. Od té chvíle se bavíte o provedení, ne o směru.
 
-- **Rozsah** — jen nové věci, nebo i to, co už existuje? Kreslit celou obrazovku, nebo výřezy? (Když se přidává něco do existující stránky, obvykle je správné kreslit ji celou, protože rozhodnutí o hierarchii nejde udělat po částech.)
-- **Věrnost** — drátěný model, nebo vizuál? Design systém se neřeší otázkou: prototypy se u nás stavějí v **Mini*S**. Brief ho jmenuje a vizuální pravidla nepopisuje — ta jsou v instrukcích design systému, ne v briefu.
-- **Zařízení** — mobil, desktop, nebo obojí.
-- **Komu se prototyp ukáže** — jména a datum, a aspoň jeden člověk mimo tu místnost, kde se o něm rozhoduje. Vlastník rozhodnutí, který na té poradě sedí, publikum není; koncept, který nemá kdo zabít, projde vždycky. Když člověk řekne „testování neplánujeme", neber to jako odpověď — zeptej se, kdo z lidí mimo produkt to uvidí, než se z toho stane rozhodnutí.
-- **Kolik směrů** — jeden dotažený návrh, nebo dva až tři odlišné směry vedle sebe? Neptej se naprázdno, rovnou doporuč: když má HMW otázka víc rozumných odpovědí a z kroků 1 až 3 žádná nevyšla jako vítěz, chtěj víc směrů v hrubé věrnosti. Když je koncept rozhodnutý a jde už jen o provedení, chtěj jeden a dotažený.
-
-Ta poslední otázka tam je proto, že Claude Design ti sám od sebe nakreslí první řešení, které mu přijde dobré, a od druhé zprávy dál už jen vylepšuje jeho. Debata se tím posune z „je tohle správný směr?" na „co s ním ještě uděláme" — a to je tiché rozhodnutí, které nikdo neudělal.
-
-## Odkud brát obsah briefu
+## Odkud brát obsah
 
 - HMW, cíl a metriku z kroku 1
 - Tvrdá omezení, datový model a co dnes existuje z kroku 2
 - Ověřená doporučení s čísly a zdroji z kroku 3
 
-**Příčky důkazů.** U každého tvrzení napiš, na které příčce stojí (od nejsilnější): behaviorální data / tickety zákaznické péče a partnerské podpory / rozhovory / desk research / domněnka. Domněnka je platná příčka, jen ji nevydávej za zjištění. Tvrzení si příčku nesou z kroků 1 až 3 — designér pak ví, o co se smí opřít.
+**U každého tvrzení napiš, odkud je.** Od nejsilnějšího: behaviorální data / tickety zákaznické péče a partnerské podpory / rozhovory / desk research / domněnka. Domněnka je v pořádku, jen ji nevydávej za zjištění. Označení se nese z kroků 1 až 3, ať Claude Design ví, čemu může věřit.
 
-Když některý krok neproběhl, napiš to do briefu jako chybějící vstup a řekni, co z toho plyne. Brief bez omezení z mapování vede k designu, který se nedá postavit.
+**Řekni produkťákovi, co od něj potřebuješ, hned na začátku.** Napiš mu seznam: skutečné příklady nabídek se jmény a cenami, screenshoty ploch, kterých se to týká, tvrdá omezení a datový model z mapování. Tohle musí dohledat a málokdy to má po ruce.
 
-**Co jsi nedostal, si nedomýšlej — ani jednou větou.** Do chybějícího vstupu patří závorka s tím, co se má doplnit, ne tvůj odhad, jak to nejspíš je. Odhad napsaný v sekci „tohle nevíme" je pořád instrukce: bude to nejkonkrétnější věta v briefu plném závorek, takže je to přesně to, co designér poslechne.
+Když to nedodá, brief napsat můžeš — jen ať nahoře stojí, co v něm chybí a že se takhle nemá posílat dál. Když ale chybí skoro všechno, žádný brief z toho není. Řekni mu to a počkej, až podklady sežene.
 
-**A odmítnutí nemá expiraci.** Když řekneš „bez těchhle vstupů brief nenapíšu, protože bych psal fikci", tak ho o dvě zprávy později nenapiš jen proto, že člověk spěchá. Buď to platí, nebo to neříkej — hranice, která vydrží dvě zprávy, znehodnotí i každou další.
+**Tři věty si vytáhni z produkťáka rovnou.** Nikde je nehledá, ví je hned:
 
-Rozliš přitom dva druhy chybějících vstupů:
+- **Co je problém a proč to řešíte.** Jedna věta. Když nemá zrámování z kroku 1, tohle je minimum, bez kterého Claude Design kreslí do prázdna.
+- **Co jdete prototypem testovat.** Co konkrétně se z něj chcete dozvědět.
+- **Co by koncept zabilo.** Výsledek, po kterém nepokračujete.
 
-- **Co člověk nemá po ruce** — sety z katalogu, screenshoty, čísla z mapování. Tady smíš odevzdat brief se závorkami, když nahoře stojí, co chybí a že takhle se posílat nemá. Ale hlídej si poměr: dokument, kde je většina sekcí prázdná, není brief, je formulář. Když se to tam blíží, řekni to rovnou a nabídni, že počkáš.
-- **Co ti může říct hned** — co má prototyp ověřit, co by koncept zabilo, komu se ukáže. Na tohle nepotřebuje nic dohledávat, stačí jedna věta. **Bez nich brief neodevzdávej vůbec**, ani označený. Prototyp bez předem napsané podmínky selhání selhat nemůže a vyrobí mandát místo odpovědi — to je celý důvod, proč krok 4 existuje, takže to není pole k vyplnění později.
+Bez těch tří vět brief nepiš. Prototyp, u kterého nikdo předem neřekl, kdy je špatně, dopadne dobře vždycky.
 
-Když je nechce napsat, máš dvě poctivé cesty a nabídni je místo briefu: buď je tvar rozhodnutý a nepotřebuje design, pak jde rovnou na psani-zadani, nebo se na tenhle termín prototyp stavět nemá. Vysvětluj to jednou. Když to zopakuješ popáté, nepřesvědčuješ, otravuješ.
+Když je produkťák říct nechce, nabídni mu dvě jiné cesty: buď je tvar rozhodnutý a stačí psani-zadani, nebo se prototyp na tenhle termín dělat nemá. Řekni to jednou a rozhodnutí nech na něm.
 
-## Struktura briefu
+**Co nevíš, si nedomýšlej.** Když do sekce „tohle nevíme" napíšeš svůj odhad, Claude Design ho přečte jako zadání — bude to nejkonkrétnější věta v celém briefu a bude se jí držet. Napiš tam jen, co chybí a co to pro návrh znamená.
 
-### 1. Co designuješ
+A na čem trváš, na tom trvej i za dvě zprávy. Když řekneš „bez tohohle brief nenapíšu", tak ho pak bez toho nenapiš.
 
-Jeden odstavec. Co, kolik ploch, jaký rozsah. A když je rozsah vědomě velký, řekni to hned — viz pravidlo o napětí níž.
+## Co v briefu stojí
 
-### 2. Kontext systému, lidsky
+### 1. Co se designuje
 
-Tohle se nejčastěji vynechá a je to nejdražší chyba. Designér, který nechápe, jak je produkt postavený, nakreslí obecný e-shop. Vysvětli v pár odrážkách to, co se u vás liší od běžné intuice — co je vlastně produkt, co varianta, co vidí zákazník ve výpisu, kdo je partner, jak dlouho věci žijí.
+Jeden odstavec. Jaká feature, kolik obrazovek, jak velký rozsah.
 
-### 3. Reálné příklady z katalogu
+Když je toho na jednu obrazovku hodně, napiš rovnou, co s tím: jestli chceš vidět všechno a škrtat až potom, nebo jestli má designér sám vybrat, co je důležitější. Když mu to nenapíšeš, rozhodne to za tebe a nedozvíš se o tom.
 
-Vždycky. Dej tři až pět skutečných příkladů se jmény, počty variant a cenami. Designér pak kreslí na reálném obsahu, ne na lorem ipsum — a hned vyjde najevo, že „výběr varianty" pro tři velikosti a pro 62 druhů koření není totéž.
+### 2. Jak je systém postavený
 
-### 4. Proč to řešíme
+Tohle se vynechává nejčastěji a stojí to nejvíc. Designér, který nechápe, jak je produkt postavený, nakreslí obecný e-shop. Vysvětli v pár odrážkách, co se u vás liší od běžné intuice — co je vlastně produkt, co varianta, co vidí zákazník ve výpisu, kdo je partner, jak dlouho věci žijí.
 
-Krátce a bez marketingu. Klidně i to, čeho se bojíte.
+### 3. Skutečné příklady
 
-### 5. Cíl, metrika, guardrail
+Tři až pět reálných nabídek se jmény, počty variant a cenami. Designér pak kreslí na skutečném obsahu, ne na lorem ipsum — a hned je vidět, že „výběr varianty" pro tři velikosti a pro 62 druhů koření není totéž.
 
-Co má být jinak, čím to změříme, a co se nesmí zhoršit.
+### 4. Proč to řešíte
 
-### 6. Co má prototyp ověřit a co by koncept zabilo
+Všechno z kroku 1 pohromadě, krátce a bez marketingu: problém, cíl, čím ho změříte a co se přitom nesmí zhoršit. HMW otázky vlož tak, jak vznikly, hlavní i dílčí, beze změn. Klidně napiš i to, čeho se u toho bojíte.
 
-Jednou větou, co se z prototypu chceme dozvědět. A předem napsaný výsledek, po kterém koncept nepokračuje — napsaný teď, protože po ukázání už to bude racionalizace. Prototyp je experiment, a experiment bez předem napsané podmínky selhání nemůže selhat — vyrobí mandát místo odpovědi.
+Čísla sem patří i tehdy, když jsou nepěkná. Bez metriky a bez toho, kde jste dnes, nemá designér podle čeho vážit, co je důležité.
 
-Komu to ukážeme a kdy: jména a termín, ne „plánujeme testování".
+### 5. Co má prototyp ověřit a co by koncept zabilo
 
-### 7. HMW otázky
+Jednou větou, co se z prototypu chcete dozvědět. A druhou, co by vás přesvědčilo, že koncept nefunguje. Obojí se píše teď — po ukázání už si to každý přizpůsobí tomu, co viděl.
 
-Hlavní i dílčí, tak jak vznikly v kroku 1. Beze změn.
+K tomu komu a kdy prototyp ukážete: jména a termín, ne „plánujeme testování".
 
-### 8. Plochy nebo obrazovky: co kam a proč
+### 6. Obrazovky: co kam, proč a čím se plní
 
-U každé plochy tři věci: co tam patří, proč právě tam, a jak se to bude plnit (ručně, pravidlem, automaticky).
+U každé obrazovky tři věci: co na ní je, proč právě tam, a čím se to plní — ručně, pravidlem, nebo automaticky.
 
-To „proč" je klíčové. Bez něj designér plochu vyzdobí, místo aby ji navrhl. A informace o tom, jak se to plní, rozhoduje o rozvržení — ruční vazby znamenají málo položek a proměnlivý počet, tedy nikdy pevnou mřížku.
+To „proč" je nejdůležitější. Bez něj designér obrazovku vyzdobí, místo aby ji navrhl. A způsob plnění rozhoduje o rozvržení: když vazby zakládá partner ručně, počet položek kolísá a bývá jich málo, takže pevná mřížka nesedí.
 
-### 9. Začni od screenshotů současného stavu
+Když se přidává do něčeho, co existuje, nenech ho kreslit od nuly a nevypisuj mu, co na stránce dnes je. Řekni mu, ať si načte screenshoty současného stavu a upravuje je — screenshoty dodá produkťák. A připoj, ať se ptá, když mu není jasné, proč tam prvek je, čím se plní nebo co se stane po kliknutí. Ze screenshotu se logika nepozná a právě v ní bývají chyby, které nemá zopakovat.
 
-Když plochy přidáváš do něčeho, co už existuje, nenech designéra kreslit od nuly a nevypisuj mu, co na stránce je. Řekni mu, ať si načte screenshoty dnešního stavu a upravuje je. Screenshoty dodá produkťák.
+### 7. Tvrdá omezení
 
-A připoj instrukci, ať se ptá, když mu na screenshotu není jasné, proč tam prvek je, čím se plní nebo co se stane po kliknutí. Ze screenshotu se nepozná logika a právě v ní bývají chyby, které nemá zopakovat.
+Číslovaný seznam. U každého nestačí fakt, napiš i důsledek pro návrh: „Většina košíků má jeden produkt a poštovné se platí za každého partnera zvlášť, takže nekresli mechaniku přidej všechno do košíku napříč partnery."
 
-### 10. Tvrdá omezení
+A u každého řekni, jestli je nepřekročitelné, nebo je to k diskusi. Designér ten rozdíl mezi „takhle to máme" a „takhle to musí zůstat" sám nepozná.
 
-Číslovaný seznam. U každého napiš, co z něj pro design plyne — ne jen fakt, ale i jeho důsledek. „Většina košíků má jeden produkt a poštovné se platí za každého partnera zvlášť, takže nekresli mechaniku přidej všechno do košíku napříč partnery."
+### 8. Ověřená doporučení s čísly a zdroji
 
-### 11. Ověřená doporučení s čísly a zdroji
+To, co vyšlo z kroku 3. S čísly a se zdrojem — pak se dá výsledek posoudit, aniž by to byla otázka vkusu.
 
-To, co vyšlo z kroku 3. S čísly a se zdrojem, protože podle toho se pak výsledek dá hodnotit, aniž by to byla otázka vkusu.
+### 9. Stavy, na které se zapomíná
 
-### 12. Stavy, na které nesmí zapomenout
+U každé obrazovky: prázdno, jedna položka, hodně položek, a navázaná věc, která skončila nebo je nedostupná. Když vazby zadává někdo ručně, je „jedna položka" nejčastější stav a poloprázdná obrazovka vypadá nedodělaně.
 
-Nikdy nevynechávej. U každé plochy: prázdno, jedna položka, hodně položek, navázaná věc skončila nebo je nedostupná. U ručně zadávaných vazeb je „jedna položka" nejčastější stav a poloprázdná plocha vypadá nedodělaně.
+### 10. Co je na prototypu nafejkované
 
-### 13. Co je v prototypu nafejkované
+Prototyp z Claude Design vypadá hotově a na poradě se z něj snadno stane rozhodnutí. Napiš, co bude vymyšlené (data, čísla, obsah) a co nikam nevede (mrtvá tlačítka). A dopiš, co to znamená pro ukazování, ať nikdo nehlásí slepé uličky jako chyby.
 
-Prototyp z Claude Design vypadá hotově a někdo ho ukáže na poradě, kde se přečte jako rozhodnutí. Napiš, co bude vymyšlené (data, čísla, obsah), co nikam nevede (mrtvá tlačítka) — a co z toho plyne pro ukazování, aby session nenarazila na zeď a reviewer nehlásil slepé uličky jako chyby.
+### 11. Co nedělat
 
-### 14. Co nedělat
+Konkrétně. Rozliš „tohle u nás existuje a je to špatně, nekopíruj to" od „tohle existuje a je to v pořádku". Vzory zavržené v kroku 3 sem patří **jmenovitě a s důvodem**, ne jako obecné „nedělej FOMO" — jinak je designér za tři týdny navrhne znovu a nikdo si nevzpomene, proč vypadly.
 
-Konkrétně. A rozlišuj „tohle u nás existuje a je to špatně, nekopíruj to" od „tohle existuje a je to v pořádku". Referenci u konkurence taky klidně označ za varovný příklad.
+### 12. Co chceš dostat zpátky
 
-Vzory zavržené v kroku 3 sem patří **jmenovitě a s důvodem**, ne jako obecné „nedělej FOMO". Jinak je designér za tři týdny navrhne znovu a nikdo si nevzpomene, proč vypadly.
+Seznam: obrazovky, zařízení, stavy, celý kontext obrazovky. A čtyři věci, které se vyplatí chtít vždycky:
 
-### 15. Co chceš dostat
-
-Seznam. Plochy, zařízení, stavy, celý kontext obrazovky. A dvě věci, které se vyplatí chtít vždycky:
-
-- Názor, co ubrat, když je rozsah vědomě velký
-- Seznam míst, kde mu chyběla komponenta v design systému nebo kde musel něco rozhodnout za vás
-
-**Kolik směrů, napsané číslem.** Ne „udělej varianty", ale „dva směry, které řeší HMW #2 každý jinak". Když chceš jeden, napiš i to — bez téhle věty si počet vybere designér za tebe. A ať se směry liší v tom, jak řeší problém, ne v barvě tlačítka; tři odstíny téhož nejsou volba.
-
-Když chceš víc směrů, přidej do briefu i tuhle větu: *„Nakresli směry nejdřív hrubě a nech mě vybrat, než začneš cokoli dotahovat."* Jinak dostaneš jeden hotový a dva odbyté.
-
-### 16. Otázky, které má vyhodit nahoru, ne rozhodnout sám
-
-Věci, které nejsou designové, ale produktové nebo obchodní. Bez tohohle seznamu je designér rozhodne potichu a vy to zjistíte pozdě.
-
-## Tři pravidla, která oddělují dobrý brief od průměrného
-
-**Pojmenuj napětí, které vědomě přijímáš.** Když víš, že rozsah je proti pravidlu nebo proti doporučení, napiš to. „Adobe doporučuje maximálně tři doporučovací plochy na stránku, nám jich vychází sedm. Je to vědomé, proto kreslíme všechno a proto budeme škrtat." Bez toho designér buď potichu škrtne sám a vy přijdete o možnosti, nebo dodá něco slabého a nebude vědět proč.
-
-**Řekni, co je nepřekročitelné a co je k diskusi.** Designér nepozná rozdíl mezi „takhle to máme" a „takhle to musí zůstat".
-
-**Nechtěj po designérovi, aby dohadoval čísla.** Když v zadání není baseline ani metrika, nemůže vážit, co je důležité.
-
-## Nabídni a počkej
-
-Hotový brief se neodešle, nabídne se: *„Napsal jsem zadání — projdi ho a řekni, co doplnit nebo změnit."* A když produkťák řekne „tohle jsem neřekl", přepiš pole jeho opravou — bez hádání o tom, co bylo řečeno. Je to rozdíl mezi zadáním, za kterým člověk stojí, a zadáním, které mu někdo vnutil.
+- **Kolik směrů, napsané číslem.** Ne „udělej varianty", ale „dva směry, které řeší HMW #2 každý jinak". Ať se liší v tom, jak řeší problém, ne v barvě tlačítka.
+- **U víc směrů větu, ať je nejdřív nakreslí hrubě** a nechá vybrat, než začne cokoli dotahovat. Jinak dostaneš jeden hotový a dva odbyté.
+- **Názor, co ubrat**, když je rozsah vědomě velký.
+- **Otázky, které má vyhodit nahoru, ne rozhodnout sám** — věci produktové a obchodní, ne designové. A seznam míst, kde mu chyběla komponenta nebo kde musel rozhodnout za vás.
 
 ## Než to pošleš
 
+Hotový brief neodesílej, nabídni ho: *„Napsal jsem brief — projdi ho a řekni, co doplnit nebo změnit."* Když produkťák řekne „tohle jsem neřekl", přepiš to jeho slovy a nehádej se o tom, co bylo řečeno. Je to rozdíl mezi briefem, za kterým člověk stojí, a briefem, který mu někdo vnutil.
+
+Než ho vypíšeš, projdi si:
+
 - Přečteno očima někoho, kdo o tématu slyší poprvé, a nikde nechybí kontext
-- Jsou tam reálné příklady z katalogu, ne obecné popisy
-- Je napsané, co má prototyp ověřit, co by koncept zabilo, a komu se ukáže — jména a termín
-- U každé plochy je „proč tam" a „čím se plní"
-- Omezení mají napsaný důsledek pro design, ne jen fakt
+- Jsou tam skutečné příklady nabídek, ne obecné popisy
+- Je napsané, co má prototyp ověřit, co by koncept zabilo, a komu se ukáže
+- U každé obrazovky je „proč tam" a „čím se plní"
+- U omezení je i důsledek pro návrh a to, jestli je nepřekročitelné
 - Jsou vyjmenované stavy včetně prázdna a jedné položky
-- Je napsané, co bude v prototypu nafejkované
-- Zavrhnuté vzory z kroku 3 jsou v „Co nedělat" jmenovitě, s důvodem
-- Je řečeno, co je nepřekročitelné
-- Je vyjmenované, co má vyhodit nahoru místo rozhodnutí
-- Není tam napsané rozvržení — to už by byla specifikace
+- Je napsané, co bude na prototypu nafejkované
+- Zavržené vzory z kroku 3 jsou jmenovitě a s důvodem
 - Je napsané, kolik směrů chceš a v čem se mají lišit
-- Podmínka, která koncept zabije, je vyplněná — ne závorka
-- Žádná chybějící informace není nahrazená odhadem
-- Brief je jeden blok ke zkopírování a byl nabídnut k projití, ne odeslán
+- Nikde není rozvržení a nikde není odhad místo chybějící informace
 
 ## Co následuje
 

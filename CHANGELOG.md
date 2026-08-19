@@ -4,6 +4,14 @@
 
 Záznamy do v0.24.0 popisují Claude Code plugin, který v tomhle repu žil do 17. 8. 2026 a je v tagu `plugin-archive-v0.24.0`. Zůstávají tady, protože ledger, který se přepisuje, aby vypadal konzistentně, je horší než ledger s historií.
 
+## v1.4.0 — 2026-08-19
+
+**Krok 4 na verzi 1.0.0: skill ví, kam ten brief jde.** Zásadní posun oproti ránu — dosud se skill tvářil, že píše zadání na kreslení. Teď stojí hned nahoře, že brief jde do konverzace s Claude Design, který **už má Mini*S**: komponenty, tokeny, typografii, barvy i stavy. Není to zadání na kreslení, je to zadání na stavbu z toho, co tam je. Z toho plyne, co do briefu nepatří (vizuální pravidla přebijí systém a vyrobí odchylku, kterou pak někdo řeší v design reviewu), co tam patří (ať staví z existujících komponent a použije k tomu skilly, které u Mini*S v Claude Design jsou) a odkaz na systém. Nová komponenta se nekreslí, dokud není jasné, že stávající nestačí.
+
+Postup je nově očíslovaný jako pět kroků — zjisti čtyři věci, vytáhni tři věty, posbírej podklady, napiš brief, nabídni ho k projití — místo sekcí pojmenovaných podle toho, o čem pojednávají.
+
+**Popis se musel zkrátit o dvanáct znaků**, protože Hub bere nejvýš 1024. Neubral jsem žádný trigger: „ve Slevomat Group" na „ve Slevomatu", „Použij vždy, když" na „Použij, když" a „Triggeruj na fráze jako" na „Triggeruj na fráze". Dohromady 1021.
+
 ## v1.3.0 — 2026-08-19
 
 **Krok 4 je přepsaný a přejmenovaný na `product-zadani-pro-design`.** Nová verze skillu od vlastníka, 0.6.0. Skill tím mění dráhu — z `design-` do `product-`, protože handoff z produktu do designu je produktová práce, a soubor se přesunul do `skills/product/` jako čtvrtý v řadě vedle Romčiných tří.

@@ -1,6 +1,6 @@
 # Pro Romču — co jsem iteroval
 
-Stav k 17. 8. 2026. Tři soubory vedle jsou tvoje kroky 1–3. Krok 4 se přesunul do `../design/design-prototypovani.md`
+Stav k 17. 8. 2026. Tři soubory vedle jsou tvoje kroky 1–3. Krok 4 leží vedle nich jako `4-product-zadani-pro-design.md` a vzal si ho Michal.
 
 **Texty jsou tvoje, slovo od slova.** Změnilo se jen to, co je vypsané níž, plus formátování, které se cestou poztrácelo.
 
@@ -11,7 +11,7 @@ Stav k 17. 8. 2026. Tři soubory vedle jsou tvoje kroky 1–3. Krok 4 se přesun
 | slevomat-definice-problemu-a-hmw | `product-definice-problemu-a-hmw` |
 | slevomat-mapovani-stavu | `product-mapovani-stavu` |
 | slevomat-konkurence-inspirace | `product-konkurence-inspirace` |
-| slevomat-zadani-pro-design | `design-prototypovani` |
+| slevomat-zadani-pro-design | `product-zadani-pro-design` |
 
 Seznam skillů je v claude.ai i v Coworku plochý — u skillu není vidět, do kterého pluginu patří. Předpona je jediné, podle čeho to člověk pozná. Slovo „slevomat" naopak v názvu být nemá, protože celý hub je slevomatí.
 

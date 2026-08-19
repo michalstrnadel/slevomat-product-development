@@ -129,4 +129,4 @@ Odhady náročnosti. To je krok 5.
 
 ## Co následuje
 
-Zadání pro design — skill design-prototypovani. Hotový prototyp se pak projede skillem slevomat-design-principles proti sedmi principům. Pak provozní dopad a zadávání v adminu, a nakonec zadání pro vývoj (psani-zadani, kontrola-zadani).
+Zadání pro design — skill product-zadani-pro-design. Hotový prototyp se pak projede skillem slevomat-design-principles proti sedmi principům. Pak provozní dopad a zadávání v adminu, a nakonec zadání pro vývoj (psani-zadani, kontrola-zadani).

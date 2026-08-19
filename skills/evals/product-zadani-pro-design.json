@@ -5,10 +5,10 @@
       "group": "hub",
       "lane": "hub",
       "skills": [
-        "design-prototypovani"
+        "product-zadani-pro-design"
       ],
       "skill_files": [
-        "skills/design/design-prototypovani.md"
+        "skills/product/4-product-zadani-pro-design.md"
       ],
       "query": "Koncept setů mám rozmyšlený, napiš mi zadání pro Claude Design. Ať to nakreslí modál se třemi dlaždicemi na detailu produktu.",
       "follow_ups": [

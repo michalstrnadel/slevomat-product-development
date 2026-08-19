@@ -103,4 +103,4 @@ Když něco chybí, řekni konkrétně co. Neposouvej se s tím, že se to dodě
 
 ## Co následuje
 
-Mapování současného stavu — jak to dnes funguje, kde jsou problémy. Pak konkurence a inspirace, zadání pro design (skill design-prototypovani), provozní dopad a zadávání v adminu, a nakonec zadání pro vývoj (skills psani-zadani a kontrola-zadani). Hotový prototyp se projede skillem slevomat-design-principles — ten posuzuje, nenavrhuje.
+Mapování současného stavu — jak to dnes funguje, kde jsou problémy. Pak konkurence a inspirace, zadání pro design (skill product-zadani-pro-design), provozní dopad a zadávání v adminu, a nakonec zadání pro vývoj (skills psani-zadani a kontrola-zadani). Hotový prototyp se projede skillem slevomat-design-principles — ten posuzuje, nenavrhuje.

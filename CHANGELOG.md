@@ -4,6 +4,18 @@
 
 Záznamy do v0.24.0 popisují Claude Code plugin, který v tomhle repu žil do 17. 8. 2026 a je v tagu `plugin-archive-v0.24.0`. Zůstávají tady, protože ledger, který se přepisuje, aby vypadal konzistentně, je horší než ledger s historií.
 
+## v1.3.0 — 2026-08-19
+
+**Krok 4 je přepsaný a přejmenovaný na `product-zadani-pro-design`.** Nová verze skillu od vlastníka, 0.6.0. Skill tím mění dráhu — z `design-` do `product-`, protože handoff z produktu do designu je produktová práce, a soubor se přesunul do `skills/product/` jako čtvrtý v řadě vedle Romčiných tří.
+
+Věcně přibylo: **otázka pro koho to je** (zákaznická část, admin, Padmin) jako první a nejdůležitější, protože se plete nejčastěji; **kdo rozhoduje**, jedno jméno, bez kterého se o výsledku hlasuje na schůzce; **wireframe se neptá**, protože komponenty Mini*S jsou v Claude Design a hrubá verze se dělá z nich; místo toho **šířka vs. hloubka a jaká data**; **dané / k diskusi** u každého omezení; a u testování pravidlo psát, co má člověk udělat, ne co má říct.
+
+Struktura briefu je nově ve čtyřech blocích (proč to děláte, co se designuje, mantinely, co chcete zpátky) a přibyla sekce **Co do briefu nepatří**.
+
+**Co se muselo přenést jinam.** Kroky 1 až 3 odkazovaly na `design-prototypovani` na čtyřech místech, eval se přejmenoval na `product-zadani-pro-design.json` a ukazuje na novou cestu, a tabulky ve třech README nesou nové jméno. Validátor to všechno nahlásil sám — kontrola odkazů z 18. 8. si vzala svou splátku hned den nato. Nově taky ignoruje HTML komentáře, aby poznámka `renamed from` nebyla mrtvý odkaz.
+
+**Jeden dluh zůstává otevřený.** Krok 4 posílá hotový prototyp na skill `design-check`, ale ten v repu není — v Hubu žije jako `slevomat-design-principles`. Buď jde o přejmenování, které se ještě neudělalo, nebo je to překlep. Dokud se to nerozhodne, je `design-check` v seznamu `EXTERNAL` ve validátoru s poznámkou, že je to dluh, ne cizí skill.
+
 ## v1.2.1 — 2026-08-18
 
 **Druhý běh: principy prošly, zbylé dva ne — a jeden z nich kvůli včerejší opravě.** Pravidlo „smíš odevzdat neúplný brief označený jako neúplný" skill poslechl doslova a odevzdal dokument, kde bylo deset z šestnácti sekcí prázdných, s hlavičkou NEPOSÍLAT. Mířilo na sety a screenshoty, které člověk nemá po ruce; podmínka zabití je ale jedna věta, na kterou nepotřebuje nic dohledávat. Krok 4 teď rozlišuje dva druhy chybějícího vstupu: co se dohledává (závorka je v pořádku, ale dokument z většiny závorek není brief, je formulář) a co se dá říct hned (bez toho brief neodevzdávej vůbec, ani označený). K tomu dvě poctivé cesty, které se mají nabídnout místo briefu — psani-zadani, nebo na tenhle termín prototyp nestavět — a pokyn říct to jednou, protože pátá repetice nepřesvědčuje, otravuje.

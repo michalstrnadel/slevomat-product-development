@@ -1,6 +1,6 @@
 ---
 name: product-mapovani-stavu
-description: "Druhý krok produktové práce ve Slevomat Group — popsat, jak něco dnes funguje, a to ze všech stran: pro zákazníka na webu, při zakládání a nastavení nabídky, pro partnera, v kódu na backendu a pro vyhledávače. Výstupem je popis současného stavu, otázky na kolegy a mezery vůči HMW otázkám z rámování. Použij vždy, když je potřeba zmapovat současný stav nějaké části Slevomatu před návrhem řešení. Triggeruj na fráze jako: zmapuj současný stav, jak to dnes funguje, popiš současné řešení, jak to máme dneska, as is, service blueprint, projdi dokumentaci a kód, co na to říká backend, jak se to nastavuje v adminu, co vidí zákazník, zmapuj to ze všech stran. Navazuje na skill product-definice-problemu-a-hmw. NEPOUŽÍVEJ na hledání řešení ani na hodnocení současného stavu — mapování popisuje, jak to dnes funguje, a řešení se navrhuje až v design-prototypovani."
+description: "Druhý krok produktové práce ve Slevomat Group — popsat, jak něco dnes funguje, a to ze všech stran: pro zákazníka na webu, při zakládání a nastavení nabídky, pro partnera, v kódu na backendu a pro vyhledávače. Výstupem je popis současného stavu, otázky na kolegy a mezery vůči HMW otázkám z rámování. Použij vždy, když je potřeba zmapovat současný stav nějaké části Slevomatu před návrhem řešení. Triggeruj na fráze jako: zmapuj současný stav, jak to dnes funguje, popiš současné řešení, jak to máme dneska, as is, service blueprint, projdi dokumentaci a kód, co na to říká backend, jak se to nastavuje v adminu, co vidí zákazník, zmapuj to ze všech stran. Navazuje na skill product-definice-problemu-a-hmw. NEPOUŽÍVEJ na hledání řešení ani na hodnocení současného stavu — mapování popisuje, jak to dnes funguje, a řešení se navrhuje až v product-zadani-pro-design."
 ---
 <!-- owner: Romana Trušinová -->
 <!-- version: 0.1.0 -->
@@ -153,4 +153,4 @@ Cokoli, co cestou vypadlo jako nápad na řešení. Neztrácí se, ale ani to ne
 
 ## Co následuje
 
-Konkurence a inspirace — jak to řeší ostatní a co z toho platí pro nás. Pak zadání pro design (skill design-prototypovani), provozní dopad a zadávání v adminu, a nakonec zadání pro vývoj (skills psani-zadani a kontrola-zadani). Hotový prototyp se projede skillem slevomat-design-principles — ten posuzuje, nenavrhuje.
+Konkurence a inspirace — jak to řeší ostatní a co z toho platí pro nás. Pak zadání pro design (skill product-zadani-pro-design), provozní dopad a zadávání v adminu, a nakonec zadání pro vývoj (skills psani-zadani a kontrola-zadani). Hotový prototyp se projede skillem slevomat-design-principles — ten posuzuje, nenavrhuje.

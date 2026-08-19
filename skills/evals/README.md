@@ -15,7 +15,7 @@ Pět scénářů, jeden na skill:
 | `product-definice-problemu-a-hmw.json` | „chybí nám filtr" jako hotové řešení, chybějící číslo, nedoložené „obchod to říká" |
 | `product-mapovani-stavu.json` | přímá žádost o návrh řešení, k tomu žádný přístup do kódu ani do adminu |
 | `product-konkurence-inspirace.json` | tři e-shopy z jednoho oboru, žádné mezery z mapování, žádný prohlížeč |
-| `design-prototypovani.json` | zadání, které si předepisuje konkrétní obrazovku a nepočítá s žádným ověřením |
+| `product-zadani-pro-design.json` | zadání, které si předepisuje konkrétní obrazovku a nepočítá s žádným ověřením |
 | `slevomat-design-principles.json` | blikající odpočet a „dívá se 12 lidí" — projde každou kontrolou a je to dark pattern |
 
 ## Jak je pustit

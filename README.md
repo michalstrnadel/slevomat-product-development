@@ -19,7 +19,7 @@ Tyhle skilly do toho vkládají jeden krok navíc. Nejdřív se pojmenuje probl�
 | `product-definice-problemu-a-hmw` | máš téma, ale ještě nevíš, co je na něm ten problém | problém, cíl a HMW otázky na jednu stránku |
 | `product-mapovani-stavu` | potřebuješ vědět, jak to funguje dnes | popis ze všech stran, otázky na kolegy, chybějící místa |
 | `product-konkurence-inspirace` | máš zmapováno a chybí ti inspirace | jak to samé řeší jinde, seřazené podle HMW otázek |
-| `design-prototypovani` | koncept je hotový a má se nakreslit | zadání pro Claude Design, jeden blok ke zkopírování |
+| `product-zadani-pro-design` | koncept je hotový a jde se designovat | zadání pro Claude Design, jeden blok ke zkopírování |
 | `slevomat-design-principles` | máš co posoudit — nápad, obrazovku, prototyp | verdikt: Drží / Riziko / Porušuje / Nejde posoudit |
 
 Kroky 5 a 6, tedy provozní dopad a zadání pro vývoj, už v Hubu jsou jako `psani-zadani` a `kontrola-zadani`.
@@ -53,8 +53,8 @@ Jestli se skill chová jako kolega, tohle nepozná. Na to jsou evaly v [`skills/
 ## Co kde leží
 
 ```
-skills/product/    kroky 1–3
-skills/design/     prototypování a principy (včetně textu sedmi principů)
+skills/product/    kroky 1–4
+skills/design/     principy (včetně textu sedmi principů)
 skills/evals/      testovací scénáře, jeden na skill
 ```
 
